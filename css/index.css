@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+/* thường dùng */
+.n_flex{
+    display: flex;
+}
+.n_center{
+    justify-content:space-between;
+    align-items: center;
+    justify-content: center;
+}
+.n_justify-end{
+    justify-content: flex-end;
+}
+.n_justify-around{
+    justify-content: space-evenly !important;
+}
+header{
+    background-color: black;
+}
+nav{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 .5rem;
+}
+/* phan ben trai */
+nav > div.n_left div#photo{
+    background-image: url(../Image/3.jpg-removebg-preview.png);
+    background-color: black;
+    background-size: cover;
+    width: 160px;
+    height: 50px;
+}
+nav > div.n_left> ul.n_menu{
+    list-style: none;
+}
+nav > div.n_left> ul.n_menu > li > a{
+    display: block;
+    text-decoration: none;
+    padding:1rem 1.3rem ;
+    position: relative;
+}
+nav > div.n_left> ul.n_menu > li > a::after{
+    content: '';
+    background-color: red;
+    width: 0;
+    height: .2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .4s;
+}
+nav > div.n_left> ul.n_menu > li > a:hover::after{
+    width: 100%;
+}
+nav > div.n_left> ul.n_menu > li > a:last-child:after{
+    content: '';
+    background-color: none;
+    width: 0;
+    height: .2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .4s;
+}
+nav > div.n_left> ul.n_menu > li > a:last-child:hover{
+    color: gray;
+}
+/* phan ben phai */
+nav > .n_right{
+    width: 60%;
+}
+nav > .n_right > .head_search{
+    width: 80%;
+}
+nav > .n_right > .head_search>div{
+    padding: .9rem 0;
+}
+nav > .n_right > .head_search .btns{
+    position: relative;
+}
+nav > .n_right > .head_search .btns  >.btn-glass{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 50%;
+}
+nav > .n_right > .head_search .btns  >.btn-glass .glass{
+    color: rgba(0, 0, 0, 0.397);
+    font-size: 23px !important;
+    padding: .5rem;
+}
+nav > .n_right > .head_search .btns{
+    border-right: 1px solid white;
+}
+nav > .n_right > .head_search .btns  input{
+    display: block;
+    font-weight: 400;
+    width: 45%;
+    /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+    /* background-clip: padding-box; */
+    color: #343434 !important;
+    border: 1px solid #707070;
+    font-size: 1rem;
+    line-height: 1.375;
+    padding: 0.5rem 1.8rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    margin-left: 50%;
+    box-sizing: border-box;
+}
+nav > div.n_right >a{
+    padding: 0 1rem;
+    width: 20%;
+    text-decoration: none;
+    padding: .6rem;
+    transition: .4s;
+    margin-left: 2%;
+}
+nav > div.n_right > a > #icon{
+    padding:0 .5rem;
+    color: white;
+}
+/* nav > div.n_right >a div#icon,span{
+    color:gray ;
+} */
+nav > div.n_right >a:hover div#icon{
+   color:gray ;
+}
+nav > div.n_right >a:hover span{
+    color:gray ;
+ }
+
+ /*menu con*/
+ nav > div.n_left> ul.n_menu > li{
+    position: relative;
+ }
+ nav > div.n_left> ul.n_menu > li> .n_sub-menu{
+    width: 15rem;
+    list-style: none;
+    position: absolute;
+    top: 3rem;
+    background-color: black;
+    /* visibility: hidden;
+     opacity: 0; 
+    transition: visibility .2s; */
+    display: none;
+    margin-top: 1.2rem;
+ }
+ nav > div.n_left> ul.n_menu > li:hover >.n_sub-menu {
+    /* visibility: visible;  */
+    /* opacity: 1; */
+    display: block;
+ }
+ nav > div.n_left> ul.n_menu > li> .n_sub-menu::after{
+    content: '';
+    border-color: transparent transparent lightgray transparent;
+    border-width: 16px;
+    border-style: solid;
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+ }
+ nav > div.n_left> ul.n_menu > li >.n_sub-menu a{
+    display: block;
+    text-decoration: none;
+    padding: .6rem 1.5rem ;
+    transition: .4s;
+ }
+ nav > div.n_left> ul.n_menu > li >.n_sub-menu a:hover{
+    background-color: #727171;
+ }
+/* phan selecter */
+header > section{
+    width: 100%;
+    height: 40rem;
+    background-image: url(../Image/4.jpg);
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header > section > .bg-black{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header > section > .bg-black .n_slogan h1{
+    font-size: 50px !important;
+    margin: 1rem 0;
+    text-align: center;
+}
+header > section > .bg-black > .n_bgSearch{
+    position: relative;
+    margin: 1rem 0;
+}
+header > section > .bg-black > .n_bgSearch .fa{
+    position:absolute;
+    top: .25rem;
+    color: rgba(0, 0, 0, 0.452);
+    font-size: 1.8rem !important;
+    padding: .6rem;
+}
+header > section > .bg-black > .n_bgSearch input{
+    display: block;
+    font-weight: 400;
+    width: 28rem;
+    height: 2.5rem;
+    /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+    /* background-clip: padding-box; */
+    color: #343434 !important;
+    border: 1px solid #707070;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0.5rem 2.3rem;
+    background-color: #fff;
+    border-radius: 2rem;
+}
+header > section > .bg-black > .n_bgSearch > .n_shop{
+
+}
+header > section > .bg-black > .n_shop  a{
+    display: block;
+    padding:.5rem !important;
+    margin: .5rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+header > section > .bg-black > .n_shop  a:hover{
+    color: gray;
+    border-color: gray;
+}
