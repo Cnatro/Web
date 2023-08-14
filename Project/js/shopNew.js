@@ -76,7 +76,7 @@ window.onload = function (){
           nameCar[i].innerHTML = `<span style = "color :#343434">${li.dataset.name} ${i+1}</span>`;
         }
         for( let i = 0 ; i < money.length ; i++){
-          money[i].innerHTML = `<span style = "color :#707070">Tiền : ${Math.floor(ranDom(1000,100))}0.000.000 VNĐ</span>`;
+          money[i].innerHTML = `<span style = "color :#707070;font-size: .8rem !important;">Tiền : ${Math.floor(ranDom(1000,100))}0.000.000 VNĐ</span>`;
         }
       }
     }
