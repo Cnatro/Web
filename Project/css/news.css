@@ -1,0 +1,622 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family:Roboto,Arial,Helvetica,sans-serif;;
+    line-height: 1.375;
+}
+.n_banner{
+    width: 70rem;
+    height: 8rem;
+    margin: 2rem auto 0 auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.n_flex{
+    display: flex;
+}
+.n_text_center{
+    text-align: center;
+}
+.n_justify-content{
+    justify-content: space-between !important;
+    justify-content: center;
+}
+.n_justify-end{
+    justify-content: flex-end;
+}
+.n_center{
+    align-items: center;
+    justify-content: center;
+}
+section.n_newpaper{
+    width: 70rem;
+    margin: 2rem auto;
+    background-color: #f8f8f8;
+}
+section > div{
+    width: 65%;
+    padding-right: 1.2rem;
+}
+section .n_content_left{
+    padding-bottom: .5rem;
+}
+section .n_content_left > h1{
+    padding: 1rem;
+    font-size: 1.3rem !important;
+}
+section .n_content_left .n_box_car_new{
+    padding-bottom: .5rem;
+    border-bottom: 1px solid rgb(197, 195, 195);
+}
+section .n_content_left .n_box_car_new #n_col_left{
+    position: relative;
+    padding: .2rem;
+}
+section .n_content_left .n_box_car_new #n_col_left::before{
+    content: "Suzuki Việt Nam ưu đãi lớn cho loạt xe VIN 2022, Cao nhất 100 triệu đồng";
+    color: white;
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: .9rem;
+    left: .5rem;
+    width: 98%;
+    height: 4rem;
+    z-index: 1;
+}
+section .n_content_left .n_box_car_new #n_col_left::after{
+    content: "";
+    position: absolute;
+    bottom: .9rem;
+    left: .2rem;
+    width: 99%;
+    height: 4rem;
+    background-image: linear-gradient(gray,black,black);
+    /* filter: blur(10px) tạo độ mờ nhòe cho cả after */
+    opacity: .6;
+}
+section .n_content_left .n_box_car_new #n_col_left >a> img{
+    height: 96% !important;
+}
+section .n_content_left .n_box_car_new .n_col_right{
+    padding: .1rem;
+}
+section .n_content_left .n_box_car_new .n_col_right >div{
+    position: relative;
+}
+section .n_content_left .n_box_car_new .n_col_right >div::before{
+    content: "";
+    position: absolute;
+    bottom: .2rem;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    background-image: linear-gradient(gray,black,black);
+    /* filter: blur(10px) tạo độ mờ nhòe cho cả after */
+    opacity: .5;
+}
+section .n_content_left .n_box_car_new .n_col_right >div:first-child:after{
+    content: "Suzuki Jimny chính hãng vừa về Việt Nam, trang bị 'xịn xò'";
+    color: white;
+    font-size: 1.1rem;
+    position: absolute;
+    bottom: 2.2rem;
+    left: .2rem;
+    width: 100%;
+    height: 2rem;
+    z-index: 1;
+}
+section .n_content_left .n_box_car_new .n_col_right >div:last-child:after{
+    content: "Vụ bán xe Honda City bị tua ODO: AnyCar 'kiện'";
+    color: white;
+    font-size: 1.1rem;
+    position: absolute;
+    bottom: 1.1rem;
+    left: .2rem;
+    width: 100%;
+    height: 2rem;
+    z-index: 1;
+}
+section .n_content_left .n_list_item{
+}
+section .n_content_left .n_list_item > .n_item_new{
+    padding:1.5rem 0;
+    border-bottom: 1px solid rgb(197, 195, 195);
+}
+section .n_content_left .n_list_item > .n_item_new > div#n_photo{
+    width: 30%;
+    padding-right: .5rem;
+}
+section .n_content_left .n_list_item > .n_item_new> div#n_small{
+    width: 70%;
+    padding-left: .5rem;
+}
+section .n_content_left .n_list_item > .n_item_new> div#n_small >h3 a{
+    color: #222;
+    display: block;
+    text-decoration: none;
+    margin-bottom: .9rem;
+}
+section .n_content_left .n_list_item > .n_item_new> div#n_small p{
+    margin-bottom: .9rem;
+}
+section .n_content_left .n_list_item > .n_item_new> div#n_small span{
+    color: gray;
+}
+/* slide */
+.n_brand_car{
+    background-color: #f0f0f0;
+    height:16rem ;
+}
+.n_brand_car #n_brand_content{
+    margin-bottom: 2rem;
+}
+.n_brand_car #n_brand_content h3{
+    font-size: 1.5rem !important;
+    padding-left: .5rem;
+    padding-top: .5rem;
+}
+.n_brand_car> #n_bg_slide{
+    height: 60%;
+    position: relative;
+    background-color: white;
+}
+.n_brand_car > #n_bg_slide div#slide {
+    overflow: hidden;
+}
+.n_brand_car > #n_bg_slide div#slide #item{
+    width: 10rem;
+    height: 8rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50% !important;
+    position: absolute;
+    left: 23%;
+    /* vì là absolute nen mọi tấm hình nằm chung cùng 1 vị trí */
+    display: inline-block;
+    z-index: 1;
+    transition: .5s;
+}
+.n_brand_car > #n_bg_slide div.n_buttons{
+   width: 100%;
+   position: absolute;
+   top: 40%;
+   z-index: 999;
+   
+}
+.n_brand_car > #n_bg_slide div.n_buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    transition: .2s;
+}
+.n_brand_car > #n_bg_slide div.n_buttons button:hover{
+    background-color: #bbb;
+}
+.n_brand_car > #n_bg_slide div.n_buttons button:last-child{
+    margin-left: 85%;
+}
+div#slide a:nth-child(1) #item{
+    transform: translate(-150%);
+    background-position: 0 50%;
+    opacity: 0;
+}
+div#slide a:nth-child(2) #item{
+    transform: translate(-40%);
+    background-position: 20% 50%;
+}
+div#slide a:nth-child(3) #item{
+    transform: translate(70%);
+    background-position: 50% 50%;
+}
+div#slide a:nth-child(4) #item{
+    transform: translate(180%);
+    background-position: 80% 50%;
+}
+div#slide a:nth-child(n+5) #item{
+    transform: translate(290%);
+    background-position: 100% 50%;
+    opacity: 0;
+}
+/* #item:nth-child(1){
+    transform: translate(-150%);
+}
+#item:nth-child(2){
+    transform: translate(-40%);
+}
+#item:nth-child(3){
+    transform: translate(70%);
+}
+#item:nth-child(4){
+    transform: translate(180%);
+}
+#item:nth-child(n+5){
+    transform: translate(290%);
+} */
+.n_brand_car > #n_bg_slide div#slide #item div#n_content{
+    position: absolute;
+    top :90%;
+    text-align: center;
+    width: 100%;
+    color: #222;
+}
+
+/*  */
+section .n_content_right {
+    width: 35%;
+    padding-right: 0 !important;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    margin-top: .5rem;
+}
+section .n_content_right > div{
+    border: 1px solid rgb(197, 195, 195);
+    border-radius: .5rem .5rem 0 0;
+}
+section .n_content_right  .n_heading_text{
+    background: #135EAC;
+    padding: .5rem;
+    border-radius: .5rem .5rem 0 0;
+    color: white;
+}
+section .n_content_right .n_heading_text h2{
+    font-size: 1.2rem !important;
+}
+section .n_content_right .n_box_list_new > ul.n_item_c{
+    list-style: none;
+    padding: .7rem 1.5rem;
+}
+section .n_content_right .n_box_list_new > ul.n_item_c > li{
+    height: 6rem;
+    padding: 1rem 0 1rem 0;
+    border-bottom: 1px solid rgb(197, 195, 195);
+}
+section .n_content_right .n_box_list_new > ul.n_item_c > li:last-child{
+    border-bottom:none;
+}
+section .n_content_right .n_box_list_new > ul.n_item_c > li > div#n_photo_r{
+    width: 35%;
+    margin-right: 1rem;
+}
+section .n_content_right .n_box_list_new > ul.n_item_c > li > div.n_small_r{
+    width: 65%;
+}
+section .n_content_right .n_box_list_new > ul.n_item_c > li > div.n_small_r a{
+    text-decoration: none;
+    color: #222;
+    display: block;
+    margin-bottom: .5rem;
+    font-size: .9rem !important;
+}
+section .n_content_right .n_box_list_new > ul.n_item_c > li > div.n_small_r p{
+    color: gray;
+    margin-top: .5rem;
+    font-size: .9rem !important;
+}
+
+section .n_content_right div#n_adv2{
+    margin-top: 4rem;
+}
+section .n_content_right div#n_adv2 .n_box_list_new > ul.n_item_c > li{
+    height: 4rem;
+}
+section .n_content_right div#n_adv2 .n_itema div#n_pt_r{
+    width: 90%;
+    height: 10rem;
+    background-image: url(../Image/11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 1.2rem;
+    margin-top: .5rem;
+}
+section .n_content_right div#n_adv2 .n_itema div#n_content_pt a{
+    text-decoration: none;
+    color: #222;
+    display: block;
+    padding: .5rem;
+    padding-left: 1.2rem !important;
+}
+/* phần đầu menu */
+header{
+    background-color: black;
+    color: white;
+}
+nav{
+    width: 80rem;
+    margin: 0 auto;
+    padding: 0 .5rem;
+}
+/* phan ben trai */
+nav > div.n_left{
+    height: 3.125rem;
+}
+nav > div.n_left div#photo{
+    background-image: url(../Image/3.png);
+    background-color: black;
+    background-size: cover;
+    width: 160px;
+    height: 100%;
+}
+nav > div.n_left> ul.n_menu{
+    list-style: none;
+}
+nav > div.n_left> ul.n_menu > li > a{
+    display: block;
+    text-decoration: none;
+    padding:1rem 1.3rem ;
+    position: relative;
+    color: white;
+}
+nav > div.n_left> ul.n_menu > li > a::after{
+    content: '';
+    background-color: red;
+    width: 0;
+    height: .2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .4s;
+}
+nav > div.n_left> ul.n_menu > li > a:hover::after{
+    width: 100%;
+}
+nav > div.n_left> ul.n_menu > li > a:last-child:after {
+    content: '';
+    background-color: none;
+    width: 0;
+    height: .2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .4s;
+}
+nav > div.n_left> ul.n_menu > li > a:last-child:hover{
+    color: rgb(156, 153, 153);
+}
+/* phan ben phai */
+nav > .n_right{
+    width: 40%; 
+}
+nav > .n_right > .head_search{
+    width: 85%;
+}
+nav > .n_right > .head_search>div{
+    padding: .9rem 0;
+}
+nav > .n_right > .head_search .btns{
+    position: relative;
+}
+nav > .n_right > .head_search .btns  >.btn-glass{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 25%;
+}
+nav > .n_right > .head_search .btns  >.btn-glass .glass{
+    color: rgba(0, 0, 0, 0.397);
+    font-size: 23px !important;
+    padding: .5rem;
+}
+nav > .n_right > .head_search .btns{
+    border-right: 1px solid white;
+}
+nav > .n_right > .head_search .btns  input{
+    display: block;
+    font-weight: 400;
+    width: 70%;
+    /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+    /* background-clip: padding-box; */
+    color: #343434 !important;
+    border: 1px solid #707070;
+    font-size: 1rem;
+    line-height: 1.375;
+    padding: 0.5rem 1.8rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    margin-left: 25%;
+    box-sizing: border-box;
+}
+nav > div.n_right >a{
+    padding: 0 1rem;
+    width: 20%;
+    text-decoration: none;
+    padding: .6rem;
+    transition: .4s;
+    margin-left: 2%;
+    color: white;
+}
+nav > div.n_right > a > #icon{
+    padding:0 .5rem;
+    color: white;
+}
+nav > div.n_right >a:hover div#icon{
+   color:gray ;
+}
+nav > div.n_right >a:hover span{
+    color:gray ;
+ }
+
+ /*menu con*/
+ nav > div.n_left> ul.n_menu > li{
+    position: relative;
+ }
+ nav > div.n_left> ul.n_menu > li> .n_sub-menu{
+    width: 15rem;
+    list-style: none;
+    position: absolute;
+    top: 2.8rem;
+    background-color: black;
+    /* visibility: hidden;
+     opacity: 0; 
+    transition: visibility .2s; */
+    display: none;
+    margin-top: 1.2rem;
+    z-index: 1;
+ }
+ nav > div.n_left> ul.n_menu > li:hover >.n_sub-menu {
+    /* visibility: visible;  */
+    /* opacity: 1; */
+    display: block;
+ }
+ nav > div.n_left> ul.n_menu > li> .n_sub-menu::after{
+    content: '';
+    border-color: transparent transparent lightgray transparent;
+    border-width: .9rem;
+    border-style: solid;
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+ }
+ nav > div.n_left> ul.n_menu > li >.n_sub-menu a{
+    display: block;
+    text-decoration: none;
+    padding: .9rem 1.5rem ;
+    transition: .4s;
+    color: white;
+ }
+ nav > div.n_left> ul.n_menu > li >.n_sub-menu a:hover{
+    background-color: #727171;
+ }
+/* phần chân trang */
+footer .n_bg_black{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+footer .n_bg_black > div{
+    width: 80rem;
+    margin: 0 auto;
+}
+footer .n_bg_black  .pro_footer{
+    width: 80%;
+    margin: 0 auto;
+}
+footer .n_bg_black .pro_footer > .footer_text > h3{
+    padding: 1rem .4rem;
+    font-size: 1.2rem !important;
+}
+footer .n_bg_black .pro_footer >.footer_text .ds_text{
+    list-style: none;
+}
+footer .n_bg_black .pro_footer >.footer_text >.ds_text a{
+    display: block;
+    padding: .5rem .5rem;
+    color: rgb(180, 179, 179);
+    transition: .2s;
+}
+
+footer .n_bg_black .pro_footer >.footer_text >.ds_text a:hover{
+    color: gray;
+}
+footer .n_bg_black .n_icon{ 
+    width: 80%;
+    margin: 1rem auto;
+  }
+footer .n_bg_black .n_icon .n_icon_left{ 
+    width: 50%;
+}
+footer .n_bg_black .n_icon .n_icon_left .fa{
+    padding: .5rem 1rem;
+    transition: .4s;
+}
+footer .n_bg_black .n_icon .n_icon_left .fa:hover{
+    color: gray;
+}
+footer .n_bg_black .n_icon .n_icon_left .fa:first-child{
+    padding: .5rem !important;
+}
+footer .n_bg_black .n_icon .n_icon_right{
+    width: 50%;
+}
+footer .n_bg_black .n_icon .n_icon_right div{
+    border: .5px solid white;
+    border-radius: .5rem;
+    margin: 0 .5rem;
+    overflow: hidden;
+    transition: .2s;
+    box-sizing: border-box;
+}
+footer .n_bg_black .n_icon .n_icon_right div:hover{
+    border: .5px solid transparent;
+}
+
+footer .n_bg_black .footer_content{
+    width: 80%;
+    margin: 2rem auto;
+}
+footer .n_bg_black .footer_content .n_letter{
+    padding: 2rem 0 0 0;
+}
+footer .n_bg_black .footer_content .n_letter > p{
+    font-size: .8rem !important;
+}
+footer .n_bg_black .footer_content ul.n_info{
+    list-style: none;
+}
+footer .n_bg_black .footer_content ul.n_info >li> a{
+    display: block;
+    padding: 0 1rem; 
+    margin:.6rem 0;
+    border-right:1px solid rgb(180, 179, 179);
+    color: rgb(180, 179, 179);
+    transition: .4s;
+    font-size: .8rem !important;
+}
+footer .n_bg_black .footer_content ul.n_info>li:last-child> a{
+    border-right:none;
+}
+footer .n_bg_black .footer_content ul.n_info li:hover a{
+    color: gray;
+}
+footer .n_bg_black .n_connent_ft{
+    padding: 1rem 0;
+}
+footer .n_bg_black .n_connent_ft > p{
+    font-size: .8rem !important;
+}
+/* phần hiện thị hiện nội dung đăng kí */
+#infoBox{
+    position: absolute;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 99999;
+  }
+  #infoBox #n_exit{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top:1rem;
+    right: 1.2rem;
+    font-size: 1.3rem !important;
+    border-radius: 50%;
+    text-align: center;
+    transition: .4s;
+}
+#infoBox #n_exit:hover{
+    background-color: #d3d0d0;
+}
+#goToTop{
+    width: 3rem;
+    height: 3rem;
+    background-color: silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: static;
+    bottom: 4rem;
+    right: 1rem;
+}
+#goToTop:hover{
+    background-color: gray;
+}

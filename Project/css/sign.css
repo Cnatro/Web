@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .n_flex{
@@ -12,30 +12,32 @@
     justify-content: center;
     align-items: center;
 }
-section{
-    width:50rem;
+section > div#n_sign{
+    padding: 1rem 4rem 2.5rem 4rem;
+    box-sizing: border-box;
+    width:40rem !important;
+    /* height: 27rem; */
     margin: 0 auto;
     background-color: #f8f8f8;
     text-align: center;
-    padding: 2rem 4rem 6rem 4rem;
 }
-section div> .n_title{
+section div#n_sign> .n_title{
     text-align: center;
-    padding:2rem 0;
+    padding:.5rem 0 1.5rem 0;
 }
-section div> .n_title > h1{
+section div#n_sign> .n_title > h1{
     font-size: 25px !important;
 }
-section > div> .n_title > h1,span{
-    padding: .5rem 0;
+section > div#n_sign> .n_title > h1,span{
+    padding: .6rem 0;
 }
-section  .n_iput {
+section div#n_sign .n_iput {
     position: relative;
 }
-section  .n_iput input{
+section div#n_sign .n_iput input{
     display: block;
-    width: 40%;
-    height: 2rem;
+    width: 60%;
+    height: 1.8rem;
     font-weight: 400;
     color: #343434;
     border: 1px solid #707070;
@@ -45,15 +47,34 @@ section  .n_iput input{
     padding: 0.5rem 0.9375rem;
     background-color: #fff;
 }
-section  .n_iput  #n_lbel{
+section div#n_sign .n_iput  label{
     position: absolute;
-    top: 1rem;
-    left: 17rem;
+    top: .6rem;
+    left: 6.4rem;
     color: #707070;
 } 
-section #n_bgcontinue{
-    width: 25rem;
-    height: 3.5rem;
+label{
+    cursor: pointer;
+}
+.input-wrapper{
+    transition:delay .4s;
+}
+.input-wrapper:hover input:not(:placeholder-shown) + label {
+    font-size: 10px;
+    top: .2rem !important;
+    transition-delay: .4s;
+}
+/* 
+
+input:not(:placeholder-shown): Đây là một điều kiện để chọn phần tử <input> kiểu text không có gợi ý (placeholder) được hiển thị (đã có nội dung được điền vào). Pseudo-class :not(:placeholder-shown) được sử dụng để chọn phần tử input khi nó không có gợi ý (placeholder)
+ hiển thị. Điều này chỉ xảy ra khi người dùng đã điền thông tin vào input.
+ */
+/* "Cursor: pointer" là một đặc tính CSS dùng để thay đổi hình dạng con trỏ chuột khi người dùng di
+ chuyển chuột qua một phần tử có đặc tính này. Điều này thường được sử dụng để chỉ ra rằng phần tử đó là một phần tử tương tác, chẳng hạn như một nút, liên kết hoặc phần tử có thể kéo thả.
+ */
+section div#n_sign #n_bgcontinue{
+    width: 67%;
+    height: 3rem;
     color: white;
     background-color: black;
     border-radius: 2rem;
@@ -63,15 +84,37 @@ section #n_bgcontinue{
     margin-top: 1rem;
     transition: .2s;
 }
-section #n_bgcontinue:hover{
+section div#n_sign #n_bgcontinue:hover{
     background-color: #525151;
 }
-section .n_line{
+section div#n_sign .n_line{
     line-height: 2rem;
     width: 100%;
     color: black;
     border-bottom-color:gray ;
+    padding: 1rem 0;
 }
+section div#n_sign .n_bg_node{
+    width: 67%;
+    height: 3.5rem;
+    background-color: white;
+    margin-bottom: .5rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: .2s;
+    border: 2px solid black;
+}
+section div#n_sign .n_bg_node:hover{
+    border: 4px solid black;
+    box-sizing: border-box; 
+}
+section div#n_sign .n_bg_node> div#n_letter{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start !important;
+}
+
 #bg_gg{
     width: 30%;
     height: 3rem;
@@ -86,24 +129,5 @@ section .n_line{
     background-image: url(../Image/6.png);
     background-size: 35%;
     background-repeat: no-repeat;
-    background-position-x: 2.5rem;
-}
-section .n_bg_node{
-    width: 25rem;
-    height: 3.5rem;
-    background-color: white;
-    margin-bottom: .5rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    box-sizing: border-box;
-    transition: .2s;
-}
-section .n_bg_node:hover{
-    border: 4px solid black;
-    box-sizing: border-box; 
-}
-section .n_bg_node> div#n_letter{
-    width: 70%;
-    display: flex;
-    justify-content: flex-start !important;
+    background-position-x: 2.8rem;
 }

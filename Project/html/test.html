@@ -1,0 +1,112 @@
+<!-- Đây là ví dụ về danh sách sản phẩm
+<div class="product" data-product-id="1">
+  <h2>Product 1</h2>
+  <p>Description of Product 1</p>
+</div>
+
+<div class="product" data-product-id="2">
+  <h2>Product 2</h2>
+  <p>Description of Product 2</p>
+</div>
+
+ Đây là nơi sẽ hiển thị thông tin sản phẩm 
+<div id="product-details">
+Thông tin sản phẩm sẽ được hiển thị ở đây
+</div>
+// Gán sự kiện click cho các sản phẩm
+const products = document.querySelectorAll('.product');
+products.forEach(product => {
+  product.addEventListener('click', () => {
+    const productId = product.getAttribute('data-product-id');
+    loadProductDetails(productId);
+  });
+});
+
+// Hàm để tải thông tin sản phẩm từ máy chủ và hiển thị nó trong trang tính nhỏ
+function loadProductDetails(productId) {
+  // Gọi API hoặc lấy thông tin sản phẩm từ máy chủ dựa vào productId
+  // Ví dụ sử dụng Fetch API
+  fetch(`/api/product/${productId}`)
+    .then(response => response.json())
+    .then(data => {
+      const productDetailsContainer = document.getElementById('product-details');
+      // Hiển thị thông tin sản phẩm
+      productDetailsContainer.innerHTML = `
+        <h2>${data.name}</h2>
+        <p>${data.description}</p>
+         Các thông tin khác về sản phẩm nếu cần 
+      `;
+    })
+    .catch(error => {
+      console.error('Error loading product details:', error);
+    });
+} -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  #content {
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  #infoBox {
+    width: 40rem;
+    height: 40rem;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+</style>
+
+<script>
+  function showInfo(filePath) {
+    var infoBox = document.getElementById("infoBox");
+    var infoContent = document.getElementById("infoContent");
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", filePath, true);
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        infoContent.innerHTML = xhr.responseText;
+        infoBox.style.display = "block";
+      }
+    };
+    xhr.send();
+  }
+
+  function closeInfo() {
+    var infoBox = document.getElementById("infoBox");
+    infoBox.style.display = "none";
+  }
+</script>
+</head>
+<body>
+  <div id="content">
+    <h1>Nội dung trang chủ</h1>
+    <p>Click để xem thông tin:</p>
+    <p><a href="#" onclick="showInfo('sign.html')">Thành phần 1</a></p>
+    <p><a href="#" onclick="showInfo('thanh-phan-2.html')">Thành phần 2</a></p>
+  </div>
+
+  <div id="infoBox" onclick="closeInfo()">
+    <div id="infoContent"></div>
+  </div>
+</body>
+</html>

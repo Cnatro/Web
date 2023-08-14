@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+    <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/news.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="n_flex n_center ">
+             <div class="n_left n_flex">
+                 <a href="../html/index.html" title="NKAR"><div id="photo"></div></a>
+                 <ul class="n_menu n_flex n_center">
+                     <li>
+                         <a href="#">Xe mới</a>
+                         <ul class="n_sub-menu">
+                             <li><a href="#">Danh sách xe mới</a></li>
+                             <li><hr style="border: .5px solid white;"></li>
+                             <li><a href="#">Xe điện mới</a></li>
+                             <li><a href="#">SUV mới</a></li>
+                             <li><a href="#">Xe tải mới</a></li>
+                             <li><a href="#">Xe mui trần mới</a></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <a href="#">Xe cũ</a>
+                         <ul class="n_sub-menu">
+                             <li><a href="#">Danh sách xe cũ</a></li>
+                             <li><hr style="border: .5px solid white;"></li>
+                             <li><a href="#">Xe điện cũ</a></li>
+                             <li><a href="#">SUV cũ</a></li>
+                             <li><a href="#">Xe tải cũ</a></li>
+                             <li><a href="#">Xe mui trần cũ</a></li>
+                         </ul>
+                     </li>
+                     <li><a id="n_news" href="../html/news.html">Tin tức</a></li>
+                     <li><a href="#">Bán xe của bạn</a> </li>
+                 </ul>
+             </div>
+             <div class="n_right n_flex n_center" >
+                   <div class=" head_search ">
+                         <div>
+                             <div class="btns ">
+                                 <div class="btn-glass">
+                                     <div class="glass fa fa-search"></div>
+                                 </div>
+                                 <div>
+                                     <input type="text" placeholder=" Tìm kiếm"/>
+                                 </div>
+                             </div>
+                         </div>
+                   </div>
+                  <a id="n_login">
+                         <span>Đăng ký</span>
+                         <div id="icon" class="fa fa-user"></div>
+                  </a>
+             </div>
+        </nav>
+     </header>
+        <!-- phần hiển thị login -->
+        <div id="infoBox">
+            <div id="show_login"></div>
+            <div id="n_exit"><i class="fa fa-times" aria-hidden="true"></i></div>
+        </div>
+        <!--  -->
+    <div class="n_banner"><img src="../Image/banner.jpg" alt=""></div>
+    <section class="n_flex n_newpaper">
+        <div>
+            <div class="n_content_left">
+                <h1>THỊ TRƯỜNG Ô TÔ 2023</h1>
+                <div class="n_box_car_new n_flex">
+                    <div  id="n_col_left"> <a href="#"><img src="../Image/8.jpg" alt=""> </a></div>
+                    <div class="n_col_right">
+                            <div><a href="#"></a><img src="../Image/9.jpg" alt=""></a></div>
+                            <div><a href="#"></a><img src="../Image/10.jpg" alt=""></a></div>
+                    </div>
+                </div>
+                <div class="n_list_item">
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/11.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Người Việt dần quan tâm đến xe năng lượng mới khi tìm mua ô tô cũ</a></h3>
+                            <p>Xe năng lượng mới bao gồm xe điện và xe Hybrid ngày càng nhận được sự quan tâm lớn từ người mua ô tô cũ hiện nay khi lượng tìm kiếm gia tăng đáng kể trong 6 tháng đầu năm 2023.</p>
+                            <span id="n_date">08/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/12.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Mitsubishi triển khai ưu đãi hấp dẫn tháng 8, Xpander được hỗ trợ 100% lệ phí trước bạ</a></h3>
+                            <p>Mitsubishi Motors Việt Nam (MMV) phối hợp với hệ thống phân phối ủy quyền triển khai nhiều chương trình ưu đãi đặc biệt dành cho khách mua xe trong tháng 8.</p>
+                            <span id="n_date">07/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/13.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Áp lực tồn kho, 'vua' doanh số Toyota Corolla Cross cũng phải hạ mình giảm giá cả trăm triệu</a></h3>
+                            <p>Bên cạnh ưu đãi 50% lệ phí trước bạ dành cho đời xe 2023 thì những chiếc Toyota Corolla Cross có số VIN 2022 đang được đại lý giảm tới 100 triệu đồng, nhằm giải phóng hàng tồn.</p>
+                            <span id="n_date">06/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/14.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">KIA Sonet 2024 'lột xác' ra sao so với bản hiện hành?</a></h3>
+                            <p>Là phiên bản nâng cấp giữa dòng đời nên KIA Sonet 2024 có sự thay đổi mạnh mẽ ở nội và ngoại thất. Xe đang trong quá trình thử nghiệm, hứa hẹn sớm ra mắt thị trường.</p>
+                            <span id="n_date">06/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/15.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Subaru Forester tiếp tục nhận ưu đãi hấp dẫn trong tháng 8, song không còn 'sốc nhiệt' như trước</a></h3>
+                            <p>Bước sang tháng 8/2023, Subaru Forester tiếp tục nhận ưu đãi hấp dẫn từ chính hãng với giá trị hàng trăm triệu đồng, song không còn sốc nhiệt như tháng trước đó.</p>
+                            <span id="n_date">05/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_brand_car">
+                        <div id="n_brand_content"><h3>GIÁ XE Ô TÔ THÁNG 8/2023</h3></div>
+                        <div id="n_bg_slide">
+                                <div id="slide">
+                                    <a href="#" style="text-decoration: none;">
+                                        <div id="item" style="background-image: url(../Image/44.jpg);">
+                                            <div id="n_content"><span>ACURA</span></div>
+                                        </div>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;">
+                                        <div id="item" style="background-image: url(../Image/45.jpg);">
+                                            <div id="n_content"><span>AUDI</span></div>
+                                        </div>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;">
+                                        <div id="item" style="background-image: url(../Image/46.jpg);">
+                                            <div id="n_content"><span>BMW</span></div>
+                                        </div>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;">
+                                        <div id="item" style="background-image: url(../Image/47.jpg);">
+                                            <div id="n_content"><span>FORD</span></div>
+                                        </div>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;">
+                                        <div id="item" style="background-image: url(../Image/48.jpg);">
+                                            <div id="n_content"><span>HYUNDAI</span></div>
+                                        </div>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;">
+                                        <div id="item" style="background-image: url(../Image/49.jpg);">
+                                            <div id="n_content"><span>LEXUS</span></div>
+                                        </div>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;">
+                                        <div id="item" style="background-image: url(../Image/50.jpg);">
+                                            <div id="n_content"><span>MAZDA</span></div>
+                                        </div>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;">
+                                        <div id="item" style="background-image: url(../Image/51.jpg);">
+                                            <div id="n_content"><span>MERCEDES-BENZ</span></div>
+                                        </div>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;">
+                                        <div id="item" style="background-image: url(../Image/52.jpg);">
+                                            <div id="n_content"><span>PEUGEOT</span></div>
+                                        </div>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;">
+                                        <div id="item" style="background-image: url(../Image/53.jpg);">
+                                            <div id="n_content"><span>PORSCHE</span></div>
+                                        </div>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;">
+                                        <div id="item" style="background-image: url(../Image/54.jpg);">
+                                            <div id="n_content"><span>TOYOTA</span></div>
+                                        </div>
+                                    </a>
+                                    <a href="#" style="text-decoration: none;">
+                                        <div id="item" style="background-image: url(../Image/55.jpg);">
+                                            <div id="n_content"><span>VINFASRT</span></div>
+                                        </div>
+                                    </a>
+                            </div>
+                            <div class="n_buttons">
+                                <button id="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                                <button id="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/16.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Mazda6 cũ đời nào được tìm mua nhiều nhất?</a></h3>
+                            <p>Nếu Mazda3 là mẫu xe mới hút khách nhất với 2.588 xe bán ra trong 6 tháng đầu năm thì Mazda6 lại là "ngôi sao sáng" với những chỉ số ấn tượng về lượng tin rao và lượt quan tâm trên thị trường xe cũ.</p>
+                            <span id="n_date">06/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/17.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Giá xe Suzuki Ciaz giảm sốc, có nơi chào bán mức thấp kỷ lục 415 triệu đồng</a></h3>
+                            <p>Đại lý đang dành ưu đãi giảm sốc 120 triệu đồng cho khách mua Suzuki Ciaz 2022. Có nơi chào bán xe với giá 415 triệu đồng, thiết lập mức giá thấp nhất từ trước đến nay.</p>
+                            <span id="n_date">06/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/18.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Chật vật vượt khó, Mercedes-Benz giảm giá cả nửa tỷ đồng mong tìm khách</a></h3>
+                            <p>Sức mua yếu cộng tháng Ngâu đang đến gần, buộc Mercedes-Benz Việt Nam phải tung ra chính sách kích cầu giảm giá sâu cho loạt xe trong tháng 8 và tháng 9/2023, cao nhất lên tới hơn 500 triệu đồng.</p>
+                            <span id="n_date">05/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/19.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Skoda tung hình ảnh úp mở về mẫu xe mới chuẩn bị ra mắt thị trường Việt</a></h3>
+                            <p>Sau khi lô xe đầu tiên cập cảng, Skoda đã công khai hình ảnh trên Fanpage chính thức, hâm nóng không khí ra mắt xe mới sắp ra mắt thị trường Việt.</p>
+                            <span id="n_date">04/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/20.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Giá lăn bánh xe Nissan giảm mạnh trong tháng 8 nhờ ưu đãi lên tới 120 triệu đồng từ chính hãng</a></h3>
+                            <p>Từ ngày 01/08/2023 – 31/08/2023, Nissan Việt Nam áp dụng chương trình ưu đãi giảm giá lớn cho toàn bộ sản phẩm, cao nhất lên tới 120 triệu đồng. Nhờ vậy, giá lăn bánh của các dòng xe cũng trở về mức hấp dẫn hơn.</p>
+                            <span id="n_date">04/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/21.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Khách mua xe cũ 'cuồng' Hyundai Creta, Tucson hơn Santa Fe</a></h3>
+                            <p>Hyundai Creta 2022 và Tucson 2010 đang là hai mẫu xe Hàn được tìm kiếm nhiều nhất trên thị trường xe cũ trong 6 tháng đầu năm, vượt qua cả sức nóng của "đàn anh" Hyundai Santa Fe.</p>
+                            <span id="n_date">04/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/22.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Không phải Xpander, Attrage mới là dòng xe Mitsubishi được người mua ô tô cũ săn đón ráo riết</a></h3>
+                            <p>Nếu Xpander là "ngựa chiến" của Mitsubishi trên đường đua giành thị phần xe mới thì Attrage lại là cái tên được săn đón nhiều nhất nhà MMV ở thị trường xe cũ.</p>
+                            <span id="n_date">04/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/23.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Giá xe Suzuki Ciaz giảm sốc, có nơi chào bán mức thấp kỷ lục 415 triệu đồng</a></h3>
+                            <p>VinFast VF9 đang được định giá khá cao so với những chiếc xe cũ đã bán trước đây. Thậm chí, không hiếm trường hợp chủ xe đăng bán VinFast VF9 chạy lướt với giá cao hơn xe mới.</p>
+                            <span id="n_date">03/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/24.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Lô xe Skoda đầu tiên cập bến Việt Nam, Hyundai Santa Fe có thêm đối thủ 'chiếu tướng'</a></h3>
+                            <p>Skoda đầu tiên đã về tới Việt Nam mang theo mẫu SUV cỡ D Kodiaq nhằm tranh thị phần với Toyota Fortuner, Ford Everest và Hyundai Santa Fe.</p>
+                            <span id="n_date">03/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/25.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Đại lý phá giá thị trường, Mitsubishi Attrage CVT giảm còn 390 triệu đồng rẻ hơn xe hạng A</a></h3>
+                            <p>Sau ưu đãi, giá xe Mitsubishi Attrage bản CVT tại đại lý chỉ còn 390 triệu đồng. Đây là mức giá thấp nhất kể từ khi mẫu xe này ra mắt.</p>
+                            <span id="n_date">02/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/26.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Toyota Land Cruiser Prado thế hệ mới ra mắt, giá quy đổi dự kiến khoảng từ 1,3 tỷ đồng</a></h3>
+                            <p>Toyota Land Cruiser Prado thế hệ mới thay đổi toàn diện với vẻ ngoài phảng phất nét cổ điển cùng loạt công nghệ tiên tiến giúp gia tăng khả năng off-road.</p>
+                            <span id="n_date">02/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/27.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Chương trình ưu đãi tháng 8 cho xe Toyota Corolla Cross</a></h3>
+                            <p>Đại lý đang dành ưu đãi giảm sốc 120 triệu đồng cho khách mua Suzuki Ciaz 2022. Có nơi chào bán xe với giá 415 triệu đồng, thiết lập mức giá thấp nhất từ trước đến nay.</p>
+                            <span id="n_date">02/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/28.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Haval H6 HEV giá 1,096 tỷ đồng ra mắt - Option miên man, đối thủ đáng gờm của Honda CR-V</a></h3>
+                            <p>Mẫu xe Haval H6 HEV đã chính thức vén màn với thiết kế sang trọng, hiện đại, tiện nghi, an toàn cùng cùng khả năng vận hành mạnh mẽ. Xe được nhập khẩu trực tiếp từ Thái Lan.</p>
+                            <span id="n_date">02/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/29.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Honda CR-V nhận ưu đãi gần 200 triệu đồng trong tháng 8, cơ hội bắt đáy cuối cùng dành cho khách Việt?</a></h3>
+                            <p>Khách hàng mua xe Honda CR-V trong tháng 8 sẽ nhận tổng ưu đãi ít nhất gần 200 triệu đồng, bao gồm 150 triệu tiền mặt từ chính hãng cùng 50% phí trước bạ và nhiều quà tặng hấp dẫn khác.</p>
+                            <span id="n_date">02/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/30.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Giá xăng dầu hôm nay: Tiến sát mốc 24.000 đồng/lít</a></h3>
+                            <p>Từ 15h ngày 1/8/2023, Bộ Công thương điều chỉnh giá xăng theo lịch định kỳ. Tại lần điều chỉnh này, giá xăng và loại dầu đều tăng.</p>
+                            <span id="n_date">01/08/2023</span>
+                        </div>
+                    </div>
+                    <div class="n_item_new n_flex">
+                        <div id="n_photo">
+                           <a href="#"> <img src="../Image/31.jpg" alt=""></a>
+                        </div>
+                        <div id="n_small">
+                            <h3><a  href="#">Dòng xe Toyota nào đang có thanh khoản tốt nhất thị trường ô tô cũ?</a></h3>
+                            <p>Không chỉ dẫn đầu về lượng xe mới bán ra, Toyota Vios còn là mẫu ô tô có tính thanh khoản tốt nhất thị trường xe cũ nửa đầu 2023.</p>
+                            <span id="n_date">01/08/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="n_content_right">
+                <div>
+                    <div class="n_heading_text">
+                        <h2>Dành riêng cho bạn</h2>
+                    </div>
+                    <div class="n_box_list_new">
+                        <ul class="n_item_c">
+                            <li class="n_flex">
+                               <div id="n_photo_r"> <a href="#"><img src="../Image/33.jpg" alt=""></a></div>
+                                <div class="n_small_r">
+                                    <h3><a href="#">2019 - Hyundai Grand i10 Hatchback 1.2 AT-Trắng Ngọc Trinh giá chỉ hơn 3 tr...</a></h3>
+                                    <p>359 triệu</p>
+                                </div>
+                            </li>
+                            <li class="n_flex">
+                                <div id="n_photo_r"> <a href="#"><img src="../Image/34.jpg" alt=""></a></div>
+                                 <div class="n_small_r">
+                                     <h3><a href="#">2023 - Hyundai Accent 1.4 AT - Tư vấn chọn màu theo mệnh, tránh biển xấu</a></h3>
+                                     <p>467 triệu</p>
+                                 </div>
+                             </li>
+                             <li class="n_flex">
+                                <div id="n_photo_r"> <a href="#"><img src="../Image/35.jpg" alt=""></a></div>
+                                 <div class="n_small_r">
+                                     <h3><a href="#">2019 - Mercedes-Benz GLC 300 4MATIC - màu trắng nội thất nâu xe đẹp như xe mới</a></h3>
+                                     <p>1 tỷ 350 triệu</p>
+                                 </div>
+                             </li>
+                             <li class="n_flex">
+                                <div id="n_photo_r"> <a href="#"><img src="../Image/36.jpg" alt=""></a></div>
+                                 <div class="n_small_r">
+                                     <h3><a href="#">2020 - Mercedes-Benz S450L - sản xuất 2019 đăng ký 2020 màu trắng kem siêu hot</a></h3>
+                                     <p>2 tỷ 670 triệu</p>
+                                 </div>
+                             </li>
+                             <li class="n_flex">
+                                <div id="n_photo_r"> <a href="#"><img src="../Image/37.jpg" alt=""></a></div>
+                                 <div class="n_small_r">
+                                     <h3><a href="#">2023 - Hyundai Creta 1.5L Tiêu chuẩn - Hỗ trợ mọi thủ tục từ a-z nhận xe tại nhà</a></h3>
+                                     <p>596 triệu</p>
+                                 </div>
+                             </li>
+                             <li class="n_flex">
+                                <div id="n_photo_r"> <a href="#"><img src="../Image/38.jpg" alt=""></a></div>
+                                 <div class="n_small_r">
+                                     <h3><a href="#">2019 - Hyundai Grand i10 Hatchback 1.2 AT-Trắng Ngọc Trinh giá chỉ hơn 3 tr...2023 - Honda CR-V 1.5 E - [Siêu hot]</a></h3>
+                                     <p>980 triệu</p>
+                                 </div>
+                             </li>
+                             <li class="n_flex">
+                                <div id="n_photo_r"> <a href="#"><img src="../Image/39.jpg" alt=""></a></div>
+                                 <div class="n_small_r">
+                                     <h3><a href="#">2023 - Honda City RS - [Hot ưu đãi cực khủng] Giá tốt nhất Toàn quốc, giảm ngay</a></h3>
+                                     <p>609 triệu</p>
+                                 </div>
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="n_adv2">
+                    <div class="n_heading_text">
+                        <h2>Người Việt quan tâm đến mẫu xe nào</h2>
+                    </div>
+                    <div class="n_itema">
+                        <div id="n_pt_r"></div>
+                        <div id="n_content_pt"><h3><a href="#">Người Việt dần quan tâm đến xe năng lượng mới khi tim mua ô tô cũ </a></h3></div>
+                    </div>
+                    <div class="n_box_list_new">
+                        <ul class="n_item_c">
+                            <li class="n_flex">
+                               <div id="n_photo_r"> <a href="#"><img src="../Image/40.jpg" alt=""></a></div>
+                                <div class="n_small_r">
+                                    <h3><a href="#">Không phải Xpander, Attrage mới là dòng xe Mitsubishi được người mua ô tô cũ săn đón ráo riết</a></h3>
+                                </div>
+                            </li>
+                            <li class="n_flex">
+                                <div id="n_photo_r"> <a href="#"><img src="../Image/41.jpg" alt=""></a></div>
+                                 <div class="n_small_r">
+                                     <h3><a href="#">Thị trường ô tô cũ nửa đầu năm 2023: Người Việt vẫn nặng lòng với xe Nhật</a></h3>
+                                 </div>
+                             </li>
+                             <li class="n_flex">
+                                <div id="n_photo_r"> <a href="#"><img src="../Image/31.jpg" alt=""></a></div>
+                                 <div class="n_small_r">
+                                     <h3><a href="#">Dòng xe Toyota nào đang có thanh khoản tốt nhất thị trường ô tô cũ?</a></h3>
+                                 </div>
+                             </li>
+                             <li class="n_flex">
+                                <div id="n_photo_r"> <a href="#"><img src="../Image/43.jpg" alt=""></a></div>
+                                 <div class="n_small_r">
+                                     <h3><a href="#">Thị trường ô tô 6 tháng cuối năm - Ánh sáng ở cuối đường hầm</a></h3>
+                                 </div>
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <div id="goToTop"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+    <!-- nhật footer-->
+    <footer>
+        <div class="n_bg_black" title="chân trang">
+            <div>
+                <div class="pro_footer n_flex n_justify-content">
+                    <div class="footer_text">
+                        <h3>Các sản phẩm</h3>
+                        <ul class="ds_text">
+                            <li><a href="#" title="ô tô đã qua sử dụng">Đã qua sử dụng</a></li>
+                            <li><a href="#" title="ô tô mới">Mới</a></li>
+                            <li><a href="#">Bán ô tô của bạn</a></li>
+                            <li><a href="#">Xe điện</a></li>
+                            <li><a href="#">Quân đội</a></li>
+                            <li><a href="#">Mua trực tuyến</a></li>
+                            <li><a href="#">Sơ đồ trang web</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_text">
+                        <h3>Tài nguyên</h3>
+                        <ul class="ds_text">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Câu trả lời thường gặp</a></li>
+                            <li><a href="#">Liên hệ chúng tôi</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_text">
+                        <h3>Làm việc với NKAR</h3>
+                        <ul class="ds_text">
+                            <li><a href="#">Đại lý</a></li>
+                            <li><a href="#">Đối tác</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_text">
+                        <h3>Về chúng tôi</h3>
+                        <ul class="ds_text">
+                            <li><a href="#">NKAR</a></li>
+                            <li><a href="#">Đội</a></li>
+                            <li><a href="#">Nghề nghiệp</a></li>
+                            <li><a href="#">Nhà phát triển</a></li>
+                            <li><a href="#">Nhà đầu tư</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="n_icon n_flex">
+                    <div class="n_icon_left">
+                        <div class="fa fa-facebook-square"></div>
+                        <div class="fa fa-twitter"></div>
+                        <div class="fa fa-instagram"></div>
+                        <div class="fa fa-linkedin"></div>
+                        <div class="fa fa-youtube-play"></div>
+                    </div>
+                    <div class="n_icon_right n_flex n_justify-end">
+                       <div> <img src="../Image/app1.svg" alt=""></div>
+                       <div><img src="../Image/app2.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="footer_content">
+                   <div class="n_letter n_text_center">
+                     <p>Nếu có thắc mắc về Dịch vụ Mua ô tô TrueCar, vui lòng gọi 1-888-878-3227 </p>
+                     <p>TrueCar có nghĩa vụ theo hợp đồng với các Đại lý được Chứng nhận phải đáp ứng các yêu cầu nhất định về dịch vụ khách hàng và hoàn thành Chương trình Chứng nhận Đại lý của TrueCar.</p>
+                     <p>TrueCar không môi giới, bán hoặc cho thuê xe cơ giới. Trừ khi có ghi chú khác, tất cả các phương tiện hiển thị trên trang web này đều được chào bán bởi các đại lý xe cơ giới được cấp phép. Tất cả phương tiện giao thông đều phụ thuộc vào giá trước đó. Khi truy cập trang web này, bạn đồng ý với Điều khoản dịch vụ và Chính sách quyền riêng tư của TrueCar.</p>
+                    </div>
+                    <div class="n_infos">
+                        <ul class="n_info n_flex n_center">
+                            <li><a href="#">Điều khoản dịch vụ</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Không bán hoặc chia sẻ thông tin cá nhân của Tôi</a></li>
+                        </ul>
+                    </div>
+                    <div class="n_connent_ft n_text_center">
+                        <p>&copy; và ™ TrueCar, Inc. Bảo lưu mọi quyền. Ảnh về xe &copy; Evox Images &copy; 1986- 2023 Chrome Data Solutions, LP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

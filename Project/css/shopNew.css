@@ -3,6 +3,7 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.375;
+    font-size: 1rem;
 }
 /* thường dùng */
 .n_text_center{
@@ -29,7 +30,6 @@ body{
 header{
     background-color: black;
     color: white;
-    font-size: 1rem;
 }
 nav{
     width: 80rem;
@@ -190,73 +190,6 @@ nav > div.n_right >a:hover span{
  nav > div.n_left> ul.n_menu > li >.n_sub-menu a:hover{
     background-color: #727171;
  }
-/* phan selection background nen */
-section#n_background_sl{
-    width: 100%;
-    height: 32rem;
-    background-image: url(../Image/4.jpg);
-    /* background-size: 100% 100%; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    font-size: 1rem;
-}
-section#n_background_sl > .bg-black{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.233);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-section#n_background_sl > .bg-black .n_slogan h1{
-    font-size: 40px !important;
-    margin: 1rem 0;
-    text-align: center;
-}
-section#n_background_sl > .bg-black > .n_bgSearch{
-    position: relative;
-    margin: 1rem 0;
-}
-section#n_background_sl > .bg-black > .n_bgSearch .fa{
-    position:absolute;
-    top: .1rem;
-    left:0;
-    color: rgba(0, 0, 0, 0.452);
-    font-size: 1.6rem !important;
-    padding: .6rem;
-}
-section#n_background_sl > .bg-black > .n_bgSearch input{
-    display: block;
-    font-weight: 400;
-    width: 25rem;
-    height: 2rem;
-    /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
-    /* background-clip: padding-box; */
-    color: #343434 !important;
-    border: 1px solid #707070;
-    font-size: 1rem;
-    line-height: 1.5;
-    padding: 0.5rem 2.3rem;
-    background-color: #fff;
-    border-radius: 2rem;
-}
-section#n_background_sl > .bg-black > .n_shop  a{
-    display: block;
-    padding:.5rem !important;
-    margin: .5rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-bottom: 1px solid white;
-    color: white;
-}
-section#n_background_sl > .bg-black > .n_shop  a:hover{
-    color: gray;
-    border-color: gray;
-}
-
-
 footer .n_bg_black{
     width: 100%;
     background-color: black;
@@ -270,8 +203,6 @@ footer .n_bg_black  .pro_footer{
     width: 80%;
     margin: 0 auto;
 }
-/* footer .n_bg_black  .pro_footer > .footer_text{
-} */
 footer .n_bg_black .pro_footer > .footer_text > h3{
     padding: 1rem .4rem;
 }
@@ -284,14 +215,9 @@ footer .n_bg_black .pro_footer >.footer_text >.ds_text a{
     color: rgb(180, 179, 179);
     transition: .2s;
 }
-
 footer .n_bg_black .pro_footer >.footer_text >.ds_text a:hover{
     color: gray;
 }
-
-
-
-
 footer .n_bg_black .n_icon{ 
     width: 80%;
     margin: 1rem auto;
@@ -355,93 +281,6 @@ footer .n_bg_black .n_connent_ft{
     padding: 1rem 0;
 }
 /* khánh */
-section#k_box{
-    width: 80rem;
-    margin:0 auto;
-    font-size: 1rem;
-}
-.K_phanso2{
-    display: flex;
-    width: 80%;
-    margin:0 auto;
-    margin-top: 100px;
-    overflow: hidden;
-}
-.K_phanso2 .K_left {
-    width: 50%;
-    box-sizing: border-box;
-}
-.K_phanso2 .K_left .K_text_Left{
-    font-size: 1.6rem !important;
-    margin-bottom: 0;
-}
-.K_phanso2 .K_left div.K_logoNew{
-    background-color: #7cd2f2;
-    font-weight: bold;
-    padding: 0.2rem;
-    border-radius: 6px;
-    width: 2.5rem;
-    text-align: center;   
-}
-.K_phanso2 .K_left img.K_imgNew{
-    width: 100%;
-}
-.K_phanso2 .K_right {
-    width: 50%;
-    box-sizing: border-box;
-    background-color: #ffff;
-}
-.K_phanso2 .K_right > div{
-    padding: 0 20px;
-}
-.K_phanso2 .K_right .K_nameNewcar{
-    font-weight: 500;
-    font-size: 1.6rem !important;
-    width: 100%;
-}
-.K_phanso2 .K_right .K_nameNewcar  img{
-    width: 30%;
-}
-.K_flex{
-    display: flex;
-}
-.K_phanso2 .K_right .K_costNewCar{
-    border: 2px solid black;
-    background-color: aqua;
-    width: 40%;
-    height: 20%;
-    margin: auto;
-    
-}
-.K_phanso2 .K_right .K_detailNewcar{
-    text-align:justify;
-}
-.K_techInfor{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    box-sizing: border-box;
-}
-.K_techInfor .K_techInfor_item{
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding: 1rem;
-    width: 33%;
-}
-.K_techInfor .K_techInfor_item .K_techInfor_item_img{
-    width: 18%;
-}
-.K_techInfor .K_techInfor_item .K_techInfor_item_text{
-    width: 79%;
-    font-size: 0.6rem !important;
-}
-.K_bold{
-    font-weight: bold;
-    color: grey;
-}
-.K_techInfor_item_text .K_bold ~ div {
-    font-weight: 500;
-}
 
 
 #infoBox{
@@ -470,20 +309,144 @@ section#k_box{
 #infoBox #n_exit:hover{
     background-color: #d3d0d0;
 }
-/* go to top */
-#goToTop{
-    width: 3rem;
-    height: 3rem;
-    background-color: silver;
+
+/* shop car */
+section#n_shop{
+    width: 80rem;
+    margin: 2rem auto;
+    background-color: #ffffff;
+}
+
+section#n_shop >div {
+    width: 80%;
+    margin: 0 auto;
+}
+section#n_shop .n_logo_car{
+    width: 50%;
+    border-right: 1px solid #a5a5a5;
+}
+section#n_shop .n_logo_car .n_shopCar{
+    position: relative;
+    border-bottom: .5px solid #a5a5a5;
+}
+section#n_shop .n_logo_car .n_shopCar #n_shopNew a{
+    text-decoration: none;
+    color: #222;
+    display: block;
+    padding: .5rem;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.2rem !important;
+}
+
+section#n_shop .n_logo_car .n_shopCar #n_shopOld a{
+    text-decoration: none;
+    color: #222;
+    display: block;
+    padding: .5rem;
+    font-size: 1.2rem !important;   
+}
+section#n_shop .n_logo_car .n_shopCar #n_shopNew h3{
+    border-bottom: .5rem solid aqua;
+}
+section#n_shop .n_logo_car .n_shopCar #n_shopOld h3{
+    border-bottom: .5rem solid transparent;
+}
+section#n_shop .n_logo_car .n_logo{
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+section#n_shop .n_logo_car .n_logo .n_bank{
+    list-style: none;
+}
+section#n_shop .n_logo_car .n_logo .n_bank li{
+    width: 10rem;
+}
+section#n_shop .n_logo_car .n_logo .n_bank li a{
+    width: 75%;
+    text-decoration: none;
+    display: block;
+    padding: .6rem;
+    color: #222;
+    border-bottom: .4rem solid transparent;
+    text-align: center;
+}
+section#n_shop .n_logo_car #n_result_shopOld{
+    display: none;
+}
+section#n_shop .n_show_car{
+    width: 50%;
+    height: 30rem;
+}
+section#n_shop .n_show_car > #n_content_list> .n_list_cars{
+    width: 20rem;
+    height: 13rem;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+section#n_shop .n_show_car >#n_content_list>  .n_list_cars div#n_item{
+   width: 16rem;
+   height: 13rem;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: 50% 50%;
+   display: inline-block;
+   position: absolute;
+   transition: 1s;
+   z-index: 999;
+}
+section#n_shop .n_show_car >#n_content_list>  .n_list_cars div#n_item:nth-child(1){
+    transform: translate(-210%);
+    background-position: 0 50%;
+    visibility: hidden;
+}
+section#n_shop .n_show_car >#n_content_list>  .n_list_cars div#n_item:nth-child(2){
+    transform: translate(-105%);
+    background-position: 20% 50%;
+    visibility: hidden;
+}
+section#n_shop .n_show_car >#n_content_list>  .n_list_cars div#n_item:nth-child(3){
+    transform: translate(6%);
+    background-position: 50% 50%;
+}
+section#n_shop .n_show_car >#n_content_list>  .n_list_cars div#n_item:nth-child(4){
+    transform: translate(120%);
+    background-position: 80% 50%;
+    visibility: hidden;
+}
+section#n_shop .n_show_car >#n_content_list>  .n_list_cars div#n_item:nth-child(n+5){
+    transform: translate(230%);
+    background-position: 100% 50%;
+    visibility: hidden;
+}
+section#n_shop .n_show_car >#n_content_list>  .n_content h3{
+    width: 70%;
+    font-size: 1.5rem !important;
+    color: #525151;
+    margin: 0 auto;
+    padding-bottom: .5rem;
+}
+section#n_shop .n_show_car >#n_content_list>  .n_content > div{
+    color: white;
+    background-color: black;
+    height: 2.5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    position: static;
-    bottom: 4rem;
-    right: 1rem;
+    justify-content: center;    
+    width: 50%;
+    border-radius: 2rem;
+    margin: .5rem auto;
+    transition: .4s;
 }
-#goToTop:hover{
-    background-color: gray;
+section#n_shop .n_show_car >#n_content_list>  .n_content > div:hover{
+    background-color: #525151;
 }
-/*  */
+section#n_shop .n_show_car > .n_cars{
+    flex-wrap: wrap;
+    visibility: hidden;
+}
+section#n_shop .n_show_car > .n_cars .n_car{
+    padding: .3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}

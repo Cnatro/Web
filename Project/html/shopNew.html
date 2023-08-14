@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NKAR | Xe mới & được sử dụng để bán | Giá xe & Đánh giá</title>
-    <link rel="stylesheet" href="../css/index.css">
-    <script src="../js/index.js"></script>
+   <link rel="stylesheet" href="../css/shopNew.css">
     <link rel="icon" href="../Image/1.jpg">
+    <script src="../js/shopNew.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <!-- <iframe src="https://www.example.com" width="100%" height="500px"></iframe> -->
     <header>
        <nav class="n_flex n_center ">
             <div class="n_left n_flex">
@@ -68,101 +67,112 @@
             <div id="n_exit"><i class="fa fa-times" aria-hidden="true"></i></div>
         </div>
     <!--  -->
-    <section id="n_background_sl">
-        <div class="bg-black ">
-           <div class="n_slogan">
-               <h1>Kết nối ước mơ</h1>
-               <h2>bước chân tương lai với xe của bạn</h2>
-           </div>
-           <div class="n_bgSearch">
-               <div class="fa fa-search"></div>
-               <input type="text" placeholder="Tìm kiếm nhãn hiệu, kiểu máy hoặc loại"/>
-           </div>
-           <div class="n_shop n_flex">
-               <div><a href="../html/shopNew.html">Cửa hàng xe mới</a></div>
-               <div><a href="#">Cửa hàng xe cũ</a></div>
-           </div>
-        </div>
-      </section>
-    <!-- khánh -->
-    <section id="k_box">
-        <div class="K_phanso2">
-            <div class="K_left">
-                <div class="K_logoNew">NEW</div>
-                <h2 class="K_text_Left">Thiết kế đột phá, hiệu suất vượt trội<br>Sở hữu ngay để tận hưởng cuộc sống tuyệt vời!</h2>
-                <img src="../Image/7.png" alt="newcar" class="K_imgNew">
-            </div>
-            <div class="K_right">
-                <div class="K_costNewCar">hh</div>
-                <div class="K_nameNewcar">Vinfast Fadil</div>
-                <div class="K_detailNewcar">
-                    Vinfast Fadil là chiếc xe đô thị cỡ nhỏ của hãng Vinfast - nhà sản xuất xe hơi Việt Nam đầu tiên. Xe được trang bị động cơ xăng 1.4L và hộp số tự động 6 cấp, với khả năng vận hành mạnh mẽ và tiết kiệm nhiên liệu. Thiết kế năng động và hiện đại, nội thất rộng rãi và tiện nghi với hệ thống giải trí đa phương tiện, điều hòa tự động và hệ thống an toàn đầy đủ. Vinfast Fadil là lựa chọn tốt với mức giá phù hợp và tiện ích đáng kể cho những người đang tìm kiếm xe đô thị nhỏ, hiện đại và tiết kiệm nhiên liệu.
+
+    <section id="n_shop">
+        <div class="n_flex">
+            <div class="n_logo_car">
+                <div class="n_shopCar n_flex n_center">
+                    <div id="n_shopNew"><h3><a href="#">Cửa hàng xe mới</a></h3></div>
+                    <div id="n_shopOld"><h3><a href="#">Cửa hàng xe cũ</a></h3></div>
                 </div>
-                <div style="font-size: 1.3rem; font-weight: 500;">Thông số kĩ thuật </div>
-                <div class="K_techInfor">
-                    <div class="K_techInfor_item K_flex">
-                        <img src="https://static.chotot.com/storage/veh-brand-model/svg/specs-model-detail-dimension.svg" alt="" class="K_techInfor_item_img">
-                        <div class="K_techInfor_item_text">
-                            <div class="K_bold">Kích thước (mm)</div>
-                            <div>3676 x 1632 x 1530</div>
-                        </div> 
+                <div class="n_logo" id="n_result_shopNew">
+                   <div class="n_flex n_justify-content">
+                        <ul class="n_bank">
+                            <li><a data-name="acura" href="#">Acura</a></li>
+                            <li><a data-name="audi" href="#">Audi</a></li>
+                            <li><a data-name="bmw" href="#">BMW</a></li>
+                            <li><a data-name="ford" href="#">Ford</a></li>
+                            <li><a data-name="cadillac" href="#">Cadillac</a></li>
+                        </ul>
+                        <ul class="n_bank">
+                            <li><a data-name="honda" href="#">Honda</a></li>
+                            <li><a data-name="hyundai" href="#">Hyundai</a></li>
+                            <li><a data-name="lexus" href="#">Lexus</a></li>
+                            <li><a data-name="mazda" href="#">Mazda</a></li>
+                            <li><a data-name="landRover" href="#">land Rover</a></li>
+                        </ul>
+                        <ul class="n_bank">
+                            <li><a data-name="mercedes" href="#">Mercedes-Benz</a></li>
+                            <li><a data-name="toyota" href="#">Toyota</a></li>
+                            <li><a data-name="vinfat" href="#">Vinfat</a></li>
+                            <li><a data-name="ram" href="#">Ram</a></li>
+                            <li><a data-name="mitsuboshi" href="#">Mitsuboshi</a></li>
+                        </ul>
+                   </div>
+                </div>
+                <div class="n_logo" id="n_result_shopOld">
+                    <div class="n_flex n_justify-content">
+                        <ul class="n_bank">
+                            <li><a data-name="honda" href="#">Honda</a></li>
+                            <li><a data-name="hyundai" href="#">Hyundai</a></li>
+                            <li><a data-name="lexus" href="#">Lexus</a></li>
+                            <li><a data-name="mazda" href="#">Mazda</a></li>
+                            <li><a data-name="landRover" href="#">land Rover</a></li>
+                        </ul>
+                        <ul class="n_bank">
+                            <li><a data-name="mercedes" href="#">Mercedes-Benz</a></li>
+                            <li><a data-name="toyota" href="#">Toyota</a></li>
+                            <li><a data-name="vinfat" href="#">Vinfat</a></li>
+                            <li><a data-name="ram" href="#">Ram</a></li>
+                            <li><a data-name="mitsuboshi" href="#">Mitsuboshi</a></li>
+                        </ul>
+                        <ul class="n_bank">
+                            <li><a data-name="acura" href="#">Acura</a></li>
+                            <li><a data-name="audi" href="#">Audi</a></li>
+                            <li><a data-name="bmw" href="#">BMW</a></li>
+                            <li><a data-name="ford" href="#">Ford</a></li>
+                            <li><a data-name="cadillac" href="#">Cadillac</a></li>
+                        </ul>
+                   </div>
+                </div>
+            </div>
+            <div class="n_show_car">
+                <div id="n_content_list">
+                    <div class="n_list_cars">
+                        <div id="n_item" style="background-image: url(../Image/56.jpg);"></div>
+                        <div id="n_item" style="background-image: url(../Image/57.jpg);"></div>
+                        <div id="n_item" style="background-image: url(../Image/58.jpg);"></div>
+                        <div id="n_item" style="background-image: url(../Image/59.jpg);"></div>
+                        <div id="n_item" style="background-image: url(../Image/60.jpg);"></div>
                     </div>
-                    <div class="K_techInfor_item K_flex">
-                        <img src="https://static.chotot.com/storage/veh-brand-model/svg/specs-model-detail-engine.svg" alt="" class="K_techInfor_item_img">
-                        <div class="K_techInfor_item_text">
-                            <div class="K_bold">Động cơ</div>
-                            <div>I4 1.5, I4 2.0, 3.0L V6</div>
-                        </div> 
+                    <div class="n_content n_text_center">
+                        <h3>Không chắc chắn với chiếc xe bạn muốn ?</h3>
+                        <div>Hãy để chúng tôi giúp bạn</div>
                     </div>
-                    <div class="K_techInfor_item K_flex">
-                        <img src="https://static.chotot.com/storage/veh-brand-model/svg/specs-model-detail-volume.svg" alt="" class="K_techInfor_item_img">
-                        <div class="K_techInfor_item_text">
-                            <div class="K_bold">Công suất (mã lực)</div>
-                            <div>98 HP @ 6200 RPM</div>
-                        </div> 
+                </div>
+                <div class="n_cars n_flex">
+                    <div class="n_car">
+                        <div id="photo"><img src="../Image/acura-1.jpg" alt=""></div>
+                        <div id="content">
+                            <p id="name"></p>
+                            <p id="money"></p>
+                        </div>
                     </div>
-                    <div class="K_techInfor_item K_flex">
-                        <img src="https://static.chotot.com/storage/veh-brand-model/svg/specs-model-detail-moment.svg" alt="" class="K_techInfor_item_img">
-                        <div class="K_techInfor_item_text">
-                            <div class="K_bold">Mô-men xoắn (Nm)</div>
-                            <div>128 Nm @ 4400 RPM</div>
-                        </div> 
+                    <div class="n_car">
+                        <div id="photo"><img src="../Image/acura-2.jpg" alt=""></div>
+                        <div id="content">
+                            <p id="name"></p>
+                            <p id="money"></p>
+                        </div>
                     </div>
-                    <div class="K_techInfor_item K_flex">
-                        <img src="https://static.chotot.com/storage/veh-brand-model/svg/specs-model-detail-powertrain.svg" alt="" class="K_techInfor_item_img">
-                        <div class="K_techInfor_item_text">
-                            <div class="K_bold">Hệ dẫn động</div>
-                            <div>FWD</div>
-                        </div> 
+                    <div class="n_car">
+                        <div id="photo"><img src="../Image/acura-3.jpg" alt=""></div>
+                        <div id="content">
+                            <p id="name"></p>
+                            <p id="money"></p>
+                        </div>
                     </div>
-                    <div class="K_techInfor_item K_flex">
-                        <img src="https://static.chotot.com/storage/veh-brand-model/svg/specs-model-detail-consumption.svg" alt="" class="K_techInfor_item_img">
-                        <div class="K_techInfor_item_text">
-                            <div class="K_bold">Tiêu thụ (lít/100km)</div>
-                            <div>5.85</div>
-                        </div> 
-                    </div>
-                    <div class="K_techInfor_item K_flex">
-                        <img src="https://static.chotot.com/storage/veh-brand-model/svg/specs-model-detail-capacity.svg" alt="" class="K_techInfor_item_img">
-                        <div class="K_techInfor_item_text">
-                            <div class="K_bold">Dung tích (lít)</div>
-                            <div>1.4</div>
-                        </div> 
-                    </div>
-                    <div class="K_techInfor_item K_flex">
-                        <img src="https://static.chotot.com/storage/veh-brand-model/svg/specs-model-detail-airbag.svg" alt="" class="K_techInfor_item_img">
-                        <div class="K_techInfor_item_text">
-                            <div class="K_bold">Số túi khí</div>
-                            <div>2</div>
-                        </div> 
+                    <div class="n_car">
+                        <div id="photo"><img src="../Image/acura-4.jpg" alt=""></div>
+                        <div id="content">
+                            <p id="name"></p>
+                            <p id="money"></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- khánh -->
-
-    <div id="goToTop"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
     <!-- nhật footer-->
     <footer>
         <div class="n_bg_black" title="chân trang">
