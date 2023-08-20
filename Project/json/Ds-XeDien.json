@@ -22,5 +22,16 @@
     {
         "img":"Porsche-black",
         "name" :"Porsche"
+    },{
+        "img" :"Vinfast-black",
+        "name":"Vinfast"
+    },
+    {
+        "img" :"Toyota-black",
+        "name":"Toyota"
+    },
+    {
+        "img" :"Audi-black",
+        "name":"Audi"
     }
 ]

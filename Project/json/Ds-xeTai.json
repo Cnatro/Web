@@ -1,10 +1,22 @@
 [
     {
-        "img" :"Tyota-C-black",
-        "name":"Toyota-C-"
+        "img" :"Mitsubishi-black",
+        "name":"Mitsubishi"
     },
     {
-        "img" :"Ford-A--black",
+        "img" :"Mazda-black",
+        "name":"Mazda"
+    },
+    {
+        "img":"Suzuki-black",
+        "name" :"Suzuki"
+    },
+    {
+        "img" :"Toyota-C-black",
+        "name":"Toyota-C"
+    },
+    {
+        "img" :"Ford-A-black",
         "name":"Ford-A"
     },
     {
@@ -16,7 +28,7 @@
         "name":"Mitsubishi"
     },
     {
-        "img" :"Mazda--black",
+        "img" :"Mazda-black",
         "name":"Mazda"
     },
     {

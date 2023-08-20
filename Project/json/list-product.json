@@ -1,5 +1,41 @@
 [
     {
+        "img" :"creta-black",
+        "name":"creta"
+    },
+    {
+        "img" :"Hrv-black",
+        "name":"Hrv"
+    },
+    {
+        "img" :"Lux SA2.0-black",
+        "name":"Lux SA2.0"
+    },
+    {
+        "img" :"wigo-black",
+        "name":"wigo"
+    },
+    {
+        "img" :"vios-black",
+        "name":"vios"
+    },
+    {
+        "img" :"honda-black",
+        "name":"honda"
+    },
+    {
+        "img" :"fadil-black",
+        "name":"fadil"
+    },
+    {
+        "img" :"rondo-black",
+        "name":"rondo"
+    },
+    {
+        "img" :"sonet-black",
+        "name":"sonet"
+    },
+    {
         "img" :"C - Class-black",
         "name":"C - Class"
     },
@@ -34,5 +70,17 @@
     {
         "img":"Vinfast-black",
         "name":"Vinfast"
+    },
+    {
+        "img" :"creta-black",
+        "name":"creta"
+    },
+    {
+        "img" :"Hrv-black",
+        "name":"Hrv"
+    },
+    {
+        "img" :"Lux SA2.0-black",
+        "name":"Lux SA2.0"
     }
 ]
