@@ -566,7 +566,7 @@ a.linkOfK_anElement:hover{
     display: block;
 }
 .K_prosAndCons{
-    margin-top: 1rem;
+    margin:1rem 0;
     width: 55%;
     box-sizing: border-box;
     border-radius: 12px;

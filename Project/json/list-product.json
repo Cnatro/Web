@@ -1,0 +1,38 @@
+[
+    {
+        "img" :"C - Class-black",
+        "name":"C - Class"
+    },
+    {
+        "img" :"city-black",
+        "name":"city"
+    },
+    {
+        "img" :"creta-black",
+        "name":"creta"
+    },
+    {
+        "img" :"Hrv-black",
+        "name":"Hrv"
+    },
+    {
+        "img" :"Lux SA2.0-black",
+        "name":"Lux SA2.0"
+    },
+    {
+        "img":"Morning-black",
+        "name":"Morning"
+    },
+    {
+        "img":"Rush-black",
+        "name":"Rush"
+    },
+    {
+        "img":"tucson-black",
+        "name":"tucson"
+    },
+    {
+        "img":"Vinfast-black",
+        "name":"Vinfast"
+    }
+]

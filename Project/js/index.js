@@ -62,7 +62,7 @@ window.onload = function (){
       }
     });
 
-    //cố định thành phần menu
+   //cố định thành phần menu
     let menu = document.querySelector('header');
     window.addEventListener('scroll', ()=>{
         let tmp = window.scrollY;
@@ -141,5 +141,64 @@ window.onload = function (){
                 }
             });
       });
+      // khánh
+      var imgFeature = document.querySelector('.K_img-feature')
+      var listImg = document.querySelectorAll('.list-img img')
+      var preBtn = document.querySelector('.K_prev')
+      var nextBtn = document.querySelector('.K_next')
+      var currentIndex = 0;
+      function updateImageByImdex(index){
+    //remove active
+    document.querySelectorAll('.list-img div').forEach(item=>{
+        item.classList.remove('K_active')
+    })
+    currentIndex = index
+    imgFeature.src = listImg[index].getAttribute('src')
+    listImg[index].parentElement.classList.add('K_active')
+
+    }
+    listImg.forEach((imgElement, index)=>{
+        imgElement.addEventListener('click', e=>{
+            imgFeature.style.opacity = '0'
+            setTimeout(()=>{
+                updateImageByImdex(index)
+                imgFeature.style.opacity = '1'
+            }, 400)
+        })
+    })
+    preBtn.addEventListener('click', e=>{
+        if(currentIndex == 0)
+        {
+            currentIndex = listImg.length - 1
+        }
+        else
+        {
+            currentIndex--
+        }
+        imgFeature.style.animation = ''
+        setTimeout(()=>{
+            updateImageByImdex(currentIndex)
+            imgFeature.style.animation = 'slideLeft 0.5s ease-in-out forwards'
+        }, 200)
+        
+    })
+    nextBtn.addEventListener('click', e=>{
+    if(currentIndex == listImg.length - 1)
+    {
+        currentIndex = 0
+    }
+    else
+    {
+        currentIndex++
+    }
+    imgFeature.style.animation = ''
+    setTimeout(()=>{
+        updateImageByImdex(currentIndex)
+        imgFeature.style.animation = 'slideRight 0.5s ease-in-out forwards'
+    }, 200)
+})
+
+    updateImageByImdex(0)
+      // khánh
 }
 

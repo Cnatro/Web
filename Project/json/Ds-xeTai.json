@@ -1,0 +1,26 @@
+[
+    {
+        "img" :"Tyota-C-black",
+        "name":"Toyota-C-"
+    },
+    {
+        "img" :"Ford-A--black",
+        "name":"Ford-A"
+    },
+    {
+        "img" :"Nissan-black",
+        "name":"Nissan"
+    },
+    {
+        "img" :"Mitsubishi-black",
+        "name":"Mitsubishi"
+    },
+    {
+        "img" :"Mazda--black",
+        "name":"Mazda"
+    },
+    {
+        "img":"Suzuki-black",
+        "name" :"Suzuki"
+    }
+]

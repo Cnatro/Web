@@ -1,0 +1,26 @@
+[
+    {
+        "img" :"Vinfast-black",
+        "name":"Vinfast"
+    },
+    {
+        "img" :"Toyota-black",
+        "name":"Toyota"
+    },
+    {
+        "img" :"Audi-black",
+        "name":"Audi"
+    },
+    {
+        "img" :"Hyundai-black",
+        "name":"Hyundai"
+    },
+    {
+        "img" :"Tesla-black",
+        "name":"Tesla"
+    },
+    {
+        "img":"Porsche-black",
+        "name" :"Porsche"
+    }
+]
