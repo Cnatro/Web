@@ -113,24 +113,24 @@ window.onload = ()=>{
           let result = "";
             for(let i of data){
                 result +=`
-                <li><a href="#">${i.vf}</a></li>
-                <li><a href="#">${i.tyt}</a></li>
-                <li><a href="#">${i.mc}</a></li>
-                <li><a href="#">${i.bmw}</a></li>
-                <li><a href="#">${i.ford}</a></li>
-                <li><a href="#">${i.acura}</a></li>
-                <li><a href="#">${i.audi}</a></li>
-                <li><a href="#">${i.austin}</a></li>
-                <li><a href="#">${i.bentley}</a></li>
-                <li><a href="#">${i.brabus}</a></li>
-                <li><a href="#">${i.cadillac}</a></li>
-                <li><a href="#">${i.chery}</a></li>
-                <li><a href="#">${i.daihatsu}</a></li>
-                <li><a href="#">${i.ferrari}</a></li>
-                <li><a href="#">${i.honda}</a></li>
-                <li><a href="#">${i.hyundai}</a></li>
-                <li><a href="#">${i.lamborghini}</a></li>
-                <li><a href="#">${i.tesla}</a></li>
+                <li><a href="showProduct.html">${i.vf}</a></li>
+                <li><a href="showProduct.html">${i.tyt}</a></li>
+                <li><a href="showProduct.html">${i.mc}</a></li>
+                <li><a href="showProduct.html">${i.bmw}</a></li>
+                <li><a href="showProduct.html">${i.ford}</a></li>
+                <li><a href="showProduct.html">${i.acura}</a></li>
+                <li><a href="showProduct.html">${i.audi}</a></li>
+                <li><a href="showProduct.html">${i.austin}</a></li>
+                <li><a href="showProduct.html">${i.bentley}</a></li>
+                <li><a href="showProduct.html">${i.brabus}</a></li>
+                <li><a href="showProduct.html">${i.cadillac}</a></li>
+                <li><a href="showProduct.html">${i.chery}</a></li>
+                <li><a href="showProduct.html">${i.daihatsu}</a></li>
+                <li><a href="showProduct.html">${i.ferrari}</a></li>
+                <li><a href="showProduct.html">${i.honda}</a></li>
+                <li><a href="showProduct.html">${i.hyundai}</a></li>
+                <li><a href="showProduct.html">${i.lamborghini}</a></li>
+                <li><a href="showProduct.html">${i.tesla}</a></li>
                 `;
             }
             document.querySelector('.list_item').innerHTML += result;
