@@ -1,8 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    
 }
 
 .n_flex{
@@ -12,7 +11,7 @@
     justify-content: center;
     align-items: center;
 }
-section > div#n_sign{
+section#n_logins > div#n_sign{
     padding: 1rem 4rem 2.5rem 4rem;
     box-sizing: border-box;
     width:40rem !important;
@@ -20,21 +19,23 @@ section > div#n_sign{
     margin: 0 auto;
     background-color: #f8f8f8;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
 }
-section div#n_sign> .n_title{
+section#n_logins div#n_sign> .n_title{
     text-align: center;
     padding:.5rem 0 1.5rem 0;
 }
-section div#n_sign> .n_title > h1{
+section#n_logins div#n_sign> .n_title > h1{
     font-size: 25px !important;
 }
-section > div#n_sign> .n_title > h1,span{
+section#n_logins > div#n_sign> .n_title > h1,span{
     padding: .6rem 0;
 }
-section div#n_sign .n_iput {
+section#n_logins div#n_sign .n_iput {
     position: relative;
 }
-section div#n_sign .n_iput input{
+section#n_logins div#n_sign .n_iput input{
     display: block;
     width: 60%;
     height: 1.8rem;
@@ -47,7 +48,7 @@ section div#n_sign .n_iput input{
     padding: 0.5rem 0.9375rem;
     background-color: #fff;
 }
-section div#n_sign .n_iput  label{
+section#n_logins div#n_sign .n_iput  label{
     position: absolute;
     top: .6rem;
     left: 6.4rem;
@@ -59,11 +60,11 @@ label{
 .input-wrapper{
     transition:delay .4s;
 }
-.input-wrapper:hover input:not(:placeholder-shown) + label {
+/* .input-wrapper:hover input:not(:placeholder-shown) + label {
     font-size: 10px;
     top: .2rem !important;
     transition-delay: .4s;
-}
+} */
 /* 
 
 input:not(:placeholder-shown): Đây là một điều kiện để chọn phần tử <input> kiểu text không có gợi ý (placeholder) được hiển thị (đã có nội dung được điền vào). Pseudo-class :not(:placeholder-shown) được sử dụng để chọn phần tử input khi nó không có gợi ý (placeholder)
@@ -72,7 +73,7 @@ input:not(:placeholder-shown): Đây là một điều kiện để chọn phầ
 /* "Cursor: pointer" là một đặc tính CSS dùng để thay đổi hình dạng con trỏ chuột khi người dùng di
  chuyển chuột qua một phần tử có đặc tính này. Điều này thường được sử dụng để chỉ ra rằng phần tử đó là một phần tử tương tác, chẳng hạn như một nút, liên kết hoặc phần tử có thể kéo thả.
  */
-section div#n_sign #n_bgcontinue{
+ section#n_logins div#n_sign #n_bgcontinue{
     width: 67%;
     height: 3rem;
     color: white;
@@ -84,17 +85,17 @@ section div#n_sign #n_bgcontinue{
     margin-top: 1rem;
     transition: .2s;
 }
-section div#n_sign #n_bgcontinue:hover{
+section#n_logins div#n_sign #n_bgcontinue:hover{
     background-color: #525151;
 }
-section div#n_sign .n_line{
+section#n_logins div#n_sign .n_line{
     line-height: 2rem;
     width: 100%;
     color: black;
     border-bottom-color:gray ;
     padding: 1rem 0;
 }
-section div#n_sign .n_bg_node{
+section#n_logins div#n_sign .n_bg_node{
     width: 67%;
     height: 3.5rem;
     background-color: white;
@@ -105,11 +106,11 @@ section div#n_sign .n_bg_node{
     transition: .2s;
     border: 2px solid black;
 }
-section div#n_sign .n_bg_node:hover{
+section#n_logins div#n_sign .n_bg_node:hover{
     border: 4px solid black;
     box-sizing: border-box; 
 }
-section div#n_sign .n_bg_node> div#n_letter{
+section#n_logins div#n_sign .n_bg_node> div#n_letter{
     width: 70%;
     display: flex;
     justify-content: flex-start !important;
@@ -119,15 +120,15 @@ section div#n_sign .n_bg_node> div#n_letter{
     width: 30%;
     height: 3rem;
     background-image: url(../Image/5.png);
-    background-size: 70%;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position-x: 1.5rem;
+    background-position-x: 1rem;
 }
 #bg_fb{
     width: 30%;
     height: 3rem;
     background-image: url(../Image/6.png);
-    background-size: 35%;
+    background-size: 41%;
     background-repeat: no-repeat;
-    background-position-x: 2.8rem;
+    background-position-x: 2.2rem;
 }

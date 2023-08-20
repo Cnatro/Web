@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/listProduct.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="../js/listProduct.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="n_flex n_center ">
+             <div class="n_left n_flex">
+                 <a href="../html/index.html" title="NKAR"><div id="photo"></div></a>
+                 <ul class="n_menu n_flex n_center">
+                     <li>
+                         <a href="#">Xe mới</a>
+                         <ul class="n_sub-menu">
+                             <li><a href="#">Danh sách xe mới</a></li>
+                             <li><hr style="border: .5px solid white;"></li>
+                             <li><a href="#">Xe điện mới</a></li>
+                             <li><a href="#">SUV mới</a></li>
+                             <li><a href="#">Xe tải mới</a></li>
+                             <li><a href="#">Xe mui trần mới</a></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <a href="#">Xe cũ</a>
+                         <ul class="n_sub-menu">
+                             <li><a href="#">Danh sách xe cũ</a></li>
+                             <li><hr style="border: .5px solid white;"></li>
+                             <li><a href="#">Xe điện cũ</a></li>
+                             <li><a href="#">SUV cũ</a></li>
+                             <li><a href="#">Xe tải cũ</a></li>
+                             <li><a href="#">Xe mui trần cũ</a></li>
+                         </ul>
+                     </li>
+                     <li><a id="n_news" href="../html/news.html">Tin tức</a></li>
+                     <li><a href="../html/sellMyCar.html">Bán xe của bạn</a> </li>
+                 </ul>
+             </div>
+             <div class="n_right n_flex n_center" >
+                   <div class=" head_search ">
+                         <div>
+                             <div class="btns ">
+                                 <div class="btn-glass">
+                                     <div class="glass fa fa-search"></div>
+                                 </div>
+                                 <div>
+                                     <input type="text" placeholder=" Tìm kiếm" id="n_search" autocomplete="off"/>
+                                 </div>
+                                 <div id="value_search">
+                                     <ul class="list_item">
+                                     </ul>
+                                 </div>
+                             </div>
+                         </div>
+                   </div>
+                  <a id="n_login">
+                         <span>Đăng ký</span>
+                         <div id="icon" class="fa fa-user"></div>
+                  </a>
+             </div>
+        </nav>
+     </header>
+      <!-- phần hiển thị login -->
+      <div id="infoBox">
+        <div id="show_login"></div>
+        <div id="n_exit"><i class="fa fa-times" aria-hidden="true"></i></div>
+    </div>
+<!--  -->
+    <h1 id="K_nametype" style="padding: 1.3rem 0;">DÁCH SÁCH SẢN PHẨM MỚI</h1>
+    <main id="K_main3">
+        <aside class="K_filter">
+            <h3 style="text-align: center;">Bộ lọc</h3>
+            <button class="K_accordion">Địa điểm</button>
+            <div class="K_content">
+                <div class="K_hidden-content_item">
+                    <input type="checkbox" name="K_location">
+                    <span>Phú Yên</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="checkbox" name="K_location">
+                    <span>Thành Phố Hồ Chí Minh</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="checkbox" name="K_location">
+                    <span>Hà Nội</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="checkbox" name="K_location">
+                    <span>Đồng Nai</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="checkbox" name="K_location">
+                    <span>Đà Nẵng</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="checkbox" name="K_location">
+                    <span>Khánh Hòa</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="checkbox" name="K_location">
+                    <span>Bình Định</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="checkbox" name="K_location">
+                    <span>Quảng Nam</span>
+                </div>
+            </div>
+
+            <button class="K_accordion">Màu sắc</button>
+            <div class="K_content">
+                <div class="K_hidden-content_item">
+                    <span class="K_circle-color" id="name_color" data-namecolor="red" style="background-color: red; color: red;">oo</span>
+                    <span>Đỏ</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <span class="K_circle-color"id="name_color"  data-namecolor="white" style="background-color: white; color: white; border: 1px solid black;">oo</span>
+                    <span>Trắng</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <span class="K_circle-color" id="name_color" data-namecolor="black" style="background-color: black; color: black;">oo</span>
+                    <span>Đen</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <span class="K_circle-color" id="name_color" data-namecolor="blue" style="background-color: blue; color: blue;">oo</span>
+                    <span>Xanh lam</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <span class="K_circle-color" id="name_color" data-namecolor="yellow" style="background-color: yellow; color: yellow;">oo</span>
+                    <span>Vàng</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <span class="K_circle-color" id="name_color" data-namecolor="silver" style="background-color: silver; color: silver;">oo</span>
+                    <span>Bạc</span>
+                </div>
+            </div>
+
+            <button class="K_accordion">Giá</button>
+            <div class="K_content">
+                <div class="K_hidden-content_item">
+                    <input type="radio" name="K_price">
+                    <span>nhỏ hơn 300 triệu</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="radio" name="K_price">
+                    <span>300 triệu - 500 triệu</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="radio" name="K_price">
+                    <span>500 triệu - 700 triệu</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="radio" name="K_price">
+                    <span>700 triệu - 1 tỷ</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="radio" name="K_price">
+                    <span>1 tỷ - 2,5 tỷ</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="radio" name="K_price">
+                    <span>2,5 tỷ - 5 tỷ</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="radio" name="K_price">
+                    <span>trên 5 tỷ</span>
+                </div>
+            </div>
+            <button class="K_accordion">Động cơ</button>
+            <div class="K_content">
+                <div class="K_hidden-content_item">
+                    <input type="radio" name="K_dongCo">
+                    <span>3 xi lanh</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="radio" name="K_dongCo">
+                    <span>4 xi lanh</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="radio" name="K_dongCo">
+                    <span>5 xi lanh</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="radio" name="K_dongCo">
+                    <span>6 xi lanh</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="radio" name="K_dongCo">
+                    <span>8 xi lanh</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="radio" name="K_dongCo">
+                    <span>10 xi lanh</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="radio" name="K_dongCo">
+                    <span>12 xi lanh</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="radio" name="K_dongCo">
+                    <span>Điện</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="radio" name="K_dongCo">
+                    <span>Hỗn hợp</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="radio" name="K_dongCo">
+                    <span>Hydro</span>
+                </div>
+            </div>
+            <button class="K_accordion">Loại nhiên liệu</button>
+            <div class="K_content">
+                <div class="K_hidden-content_item">
+                    <input type="checkbox" name="K_source">
+                    <span>Dầu diesel</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="checkbox" name="K_source">
+                    <span>Điện</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="checkbox" name="K_source">
+                    <span>Khí gas</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="checkbox" name="K_source">
+                    <span>Hỗn hợp</span>
+                </div>
+                <div class="K_hidden-content_item">
+                    <input type="checkbox" name="K_source">
+                    <span>Hydro</span>
+                </div>
+                
+            </div>
+        </aside>
+        <section class="K_products">
+            <div class="K_product_item">
+                <a href="../html/showProduct.html">
+                    <div class="K_mainIMG"><img src="../Image/honda-black.jpg" alt=""></div>
+                    <h3 style="text-align: center; font-size: 2rem;width: 80%; margin: auto;">Honda</h3>
+                    <div class="K_cost_index3"><h4 class="K_cost_index3_money" style="text-align: center;">559 triệu - 609 triệu</h4></div>
+                    <div class="K_containerIcon">
+                        <div class="K_index3-icon"><img src="../Image/call.jpg" alt=""></div>
+                        <div class="K_index3-icon"><img src="../Image/cart.jpg" alt=""></div>
+                    </div>
+                    <div class="Kk_location">Điểm bán: Phú Yên</div>
+                    <div class="Kk_color">Màu sắc: Đen</div>
+                </a>
+            </div>
+            <div class="K_product_item">
+                <a href="../html/showProduct.html">
+                    <div class="K_mainIMG"><img src="../Image/fadil-black.jpg" alt=""></div>
+                    <h3 style="text-align: center; font-size: 2rem;width: 80%; margin: auto;">Fadil</h3>
+                    <div class="K_cost_index3"><h4 class="K_cost_index3_money" style="text-align: center;">559 triệu - 609 triệu</h4></div>
+                    <div class="K_containerIcon">
+                        <div class="K_index3-icon"><img src="../Image/call.jpg" alt=""></div>
+                        <div class="K_index3-icon"><img src="../Image/cart.jpg" alt=""></div>
+                    </div>
+                    <div class="Kk_location">Điểm bán: Phú Yên</div>
+                    <div class="Kk_color">Màu sắc: Đen</div>
+                </a>
+            </div>
+            <div class="K_product_item">
+                <a href="../html/showProduct.html">
+                    <div class="K_mainIMG"><img src="../Image/rondo-black.jpg" alt=""></div>
+                    <h3 style="text-align: center; font-size: 2rem;width: 80%; margin: auto;">Rondo</h3>
+                    <div class="K_cost_index3"><h4 class="K_cost_index3_money" style="text-align: center;">559 triệu - 609 triệu</h4></div>
+                    <div class="K_containerIcon">
+                        <div class="K_index3-icon"><img src="../Image/call.jpg" alt=""></div>
+                        <div class="K_index3-icon"><img src="../Image/cart.jpg" alt=""></div>
+                    </div>
+                    <div class="Kk_location">Điểm bán: Phú Yên</div>
+                    <div class="Kk_color">Màu sắc: Đen</div>
+                </a>
+            </div>
+            <div class="K_product_item">
+                <a href="../html/showProduct.html">
+                    <div class="K_mainIMG"><img src="../Image/sonet-black.jpg" alt=""></div>
+                    <h3 style="text-align: center; font-size: 2rem;width: 80%; margin: auto;">Sonet</h3>
+                    <div class="K_cost_index3"><h4 class="K_cost_index3_money" style="text-align: center;">559 triệu - 609 triệu</h4></div>
+                    <div class="K_containerIcon">
+                        <div class="K_index3-icon"><img src="../Image/call.jpg" alt=""></div>
+                        <div class="K_index3-icon"><img src="../Image/cart.jpg" alt=""></div>
+                    </div>
+                    <div class="Kk_location">Điểm bán: Phú Yên</div>
+                    <div class="Kk_color">Màu sắc: Đen</div>
+                </a>
+            </div>
+            <div class="K_product_item">
+                <a href="../html/showProduct.html">
+                    <div class="K_mainIMG"><img src="../Image/vios-black.jpg" alt=""></div>
+                    <h3 style="text-align: center; font-size: 2rem;width: 80%; margin: auto;">Vios</h3>
+                    <div class="K_cost_index3"><h4 class="K_cost_index3_money" style="text-align: center;">559 triệu - 609 triệu</h4></div>
+                    <div class="K_containerIcon">
+                        <div class="K_index3-icon"><img src="../Image/call.jpg" alt=""></div>
+                        <div class="K_index3-icon"><img src="../Image/cart.jpg" alt=""></div>
+                    </div>
+                    <div class="Kk_location">Điểm bán: Phú Yên</div>
+                    <div class="Kk_color">Màu sắc: Đen</div>
+                </a>
+            </div>
+            <div class="K_product_item">
+                <a href="../html/showProduct.html">
+                    <div class="K_mainIMG"><img src="../Image/wigo-black.jpg" alt=""></div>
+                    <h3 style="text-align: center; font-size: 2rem;width: 80%; margin: auto;">Wigo</h3>
+                    <div class="K_cost_index3"><h4 class="K_cost_index3_money" style="text-align: center;">559 triệu - 609 triệu</h4></div>
+                    <div class="K_containerIcon">
+                        <div class="K_index3-icon"><img src="../Image/call.jpg" alt=""></div>
+                        <div class="K_index3-icon"><img src="../Image/cart.jpg" alt=""></div>
+                    </div>
+                    <div class="Kk_location">Điểm bán: Phú Yên</div>
+                    <div class="Kk_color">Màu sắc: Đen</div>
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

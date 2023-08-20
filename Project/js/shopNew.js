@@ -18,6 +18,24 @@ window.onload = function (){
           }
         };
         xhr.send();
+        // fix js của sigin khi nhấp lại không được
+        setTimeout(()=> {
+          let input_sign = document.getElementById('n_72');
+          input_sign.addEventListener('focus', function(){
+             document.querySelector('label').style.fontSize = '10px';
+             document.querySelector('label').style.top = '.2rem';
+          });
+          
+          input_sign.addEventListener('blur', function(){
+              if(input_sign.value === ""){
+                  document.querySelector('label').style.fontSize = '1rem';
+                  document.querySelector('label').style.top = '.6rem';
+              }else{
+                  document.querySelector('label').style.fontSize = '10px';
+                  document.querySelector('label').style.top = '.2rem';
+              }
+           });
+        },10);
     }
     
     let btn_Exit = document.getElementById("n_exit");
@@ -89,11 +107,67 @@ window.onload = function (){
       index = (index + 1) % list_Cars.length;
     },2000);
 
-    // let list_Name_car = document.querySelectorAll('.n_bank li a');
-    // console.log(list_Name_car);
-    // for(let i of list_Name_car){
-    //   i.addEventListener('click',function(){
-         
-    //   }) 
-    // };
+
+    // nap data lên list_item
+    function loadData(){
+      fetch('../json/list-search.json').then(res => res.json()).then(function(data) {
+        let result = "";
+          for(let i of data){
+              result +=`
+              <li><a href="#">${i.vf}</a></li>
+              <li><a href="#">${i.tyt}</a></li>
+              <li><a href="#">${i.mc}</a></li>
+              <li><a href="#">${i.bmw}</a></li>
+              <li><a href="#">${i.ford}</a></li>
+              <li><a href="#">${i.acura}</a></li>
+              <li><a href="#">${i.audi}</a></li>
+              <li><a href="#">${i.austin}</a></li>
+              <li><a href="#">${i.bentley}</a></li>
+              <li><a href="#">${i.brabus}</a></li>
+              <li><a href="#">${i.cadillac}</a></li>
+              <li><a href="#">${i.chery}</a></li>
+              <li><a href="#">${i.daihatsu}</a></li>
+              <li><a href="#">${i.ferrari}</a></li>
+              <li><a href="#">${i.honda}</a></li>
+              <li><a href="#">${i.hyundai}</a></li>
+              <li><a href="#">${i.lamborghini}</a></li>
+              <li><a href="#">${i.tesla}</a></li>
+              `;
+          }
+          document.querySelector('.list_item').innerHTML += result;
+      })
+    }
+    loadData();
+    // phần tìm kiếm trong trang chủ
+      let input_search = document.getElementById('n_search');
+      let menu_search = document.querySelector('#value_search');
+      let list_item_menu;
+      // vì hàm loadData ch kịp tải data lên cây dom nên ta phải chờ trong 1s
+      setTimeout(() => {
+        list_item_menu = document.querySelectorAll('.list_item li');
+
+        // hàm tìm kiếm
+        input_search.addEventListener('keyup', function(){
+            list_item_menu.forEach((ele) => {
+               let text = ele.innerText.toLowerCase();
+               if(text.indexOf(input_search.value.toLowerCase()) > -1){
+                  ele.style.display = "";
+               }
+               else{
+                ele.style.display = "none";
+               }
+            });
+        });
+      }, 1000);
+      // ẩn hiện menu_search
+      input_search.addEventListener('click', function (){
+            menu_search.style.display = "block";
+
+            for(let i of list_item_menu){
+              i.addEventListener('click',function(){
+                 input_search.value = this.innerText;
+                 menu_search.style.display = 'none';
+              });
+           }
+      });
 }

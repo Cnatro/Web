@@ -1,0 +1,595 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.375;
+}
+/**khanh**/
+body{
+    font-weight: 400;
+    background-color: #f8f8f8;
+    font-size: 1rem;
+}
+.K_bold{
+    font-weight: bold;
+    color: grey;
+}
+h1,h2,h3,h4,h5,h6{
+    padding : 0.5rem 0;
+}
+main#K_main, .K_tool_index{
+    width: 80rem;
+    margin: 0 auto;
+    position: relative;
+}
+.K_flex{
+    display: flex;
+}
+.K_flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* thường dùng */
+.n_flex{
+    display: flex;
+}
+.n_center{
+    justify-content:space-between;
+    align-items: center;
+    justify-content: center;
+}
+.n_justify-end{
+    justify-content: flex-end;
+}
+.n_justify-around{
+    justify-content: space-evenly !important;
+}
+header{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+}
+nav{
+    width: 80rem;
+    margin: 0 auto;
+    padding: 0 .5rem;
+}
+/* phan ben trai */
+nav > div.n_left{
+    height: 3.125rem;
+}
+nav > div.n_left div#photo{
+    background-image: url(../Image/3.jpg);
+    background-color: black;
+    background-size: cover;
+    width: 160px;
+    height: 100%;
+}
+nav > div.n_left> ul.n_menu{
+    list-style: none;
+}
+nav > div.n_left> ul.n_menu > li > a{
+    display: block;
+    text-decoration: none;
+    padding:1rem 1.3rem ;
+    position: relative;
+    color: white;
+}
+nav > div.n_left> ul.n_menu > li > a::after{
+    content: '';
+    background-color: red;
+    width: 0;
+    height: .2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .4s;
+}
+nav > div.n_left> ul.n_menu > li > a:hover::after{
+    width: 100%;
+}
+nav > div.n_left> ul.n_menu > li > a:last-child:after{
+    content: '';
+    background-color: none;
+    width: 0;
+    height: .2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .4s;
+}
+nav > div.n_left> ul.n_menu > li > a:last-child:hover{
+    color: gray;
+}
+/* phan ben phai */
+nav > .n_right{
+    width: 52%; 
+}
+nav > .n_right > .head_search{
+    width: 80%;
+}
+nav > .n_right > .head_search>div{
+    padding: .9rem 0;
+}
+nav > .n_right > .head_search .btns{
+    position: relative;
+}
+nav > .n_right > .head_search .btns  >.btn-glass{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 40%;
+}
+nav > .n_right > .head_search .btns  >.btn-glass .glass{
+    color: rgba(0, 0, 0, 0.397);
+    font-size: 23px !important;
+    padding: .5rem;
+}
+nav > .n_right > .head_search .btns{
+    border-right: 1px solid white;
+}
+nav > .n_right > .head_search .btns  input{
+    display: block;
+    font-weight: 400;
+    width: 55%;
+    /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+    /* background-clip: padding-box; */
+    color: #343434 !important;
+    border: 1px solid #707070;
+    font-size: 1rem;
+    line-height: 1.375;
+    padding: 0.5rem 1.8rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    margin-left: 40%;
+    box-sizing: border-box;
+}
+nav > div.n_right >a{
+    padding: 0 1rem;
+    width: 20%;
+    text-decoration: none;
+    padding: .6rem;
+    transition: .4s;
+    margin-left: 2%;
+    color: white;
+}
+nav > div.n_right > a > #icon{
+    padding:0 .5rem;
+    color: white;
+}
+/* nav > div.n_right >a div#icon,span{
+    color:gray ;
+} */
+nav > div.n_right >a:hover div#icon{
+   color:gray ;
+}
+nav > div.n_right >a:hover span{
+    color:gray ;
+ }
+
+ /*menu con*/
+ nav > div.n_left> ul.n_menu > li{
+    position: relative;
+ }
+ nav > div.n_left> ul.n_menu > li> .n_sub-menu{
+    width: 15rem;
+    list-style: none;
+    position: absolute;
+    top: 3rem;
+    background-color: black;
+    /* visibility: hidden;
+     opacity: 0; 
+    transition: visibility .2s; */
+    display: none;
+    margin-top: 1.2rem;
+ }
+ nav > div.n_left> ul.n_menu > li:hover >.n_sub-menu {
+    /* visibility: visible;  */
+    /* opacity: 1; */
+    display: block;
+ }
+ nav > div.n_left> ul.n_menu > li> .n_sub-menu::after{
+    content: '';
+    border-color: transparent transparent lightgray transparent;
+    border-width: .9rem;
+    border-style: solid;
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+ }
+ nav > div.n_left> ul.n_menu > li >.n_sub-menu a{
+    display: block;
+    text-decoration: none;
+    padding: .6rem 1.5rem ;
+    transition: .4s;
+    color: white;
+ }
+ nav > div.n_left> ul.n_menu > li >.n_sub-menu a:hover{
+    background-color: #727171;
+ }
+/* phan selecter */
+header > section{
+    width: 100%;
+    height: 32rem;
+    background-image: url(../Image/4.jpg);
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header > section > .bg-black{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header > section > .bg-black .n_slogan h1{
+    font-size: 40px !important;
+    margin: 1rem 0;
+    text-align: center;
+}
+header > section > .bg-black > .n_bgSearch{
+    position: relative;
+    margin: 1rem 0;
+}
+header > section > .bg-black > .n_bgSearch .fa{
+    position:absolute;
+    top: .1rem;
+    color: rgba(0, 0, 0, 0.452);
+    font-size: 1.6rem !important;
+    padding: .6rem;
+}
+header > section > .bg-black > .n_bgSearch input{
+    display: block;
+    font-weight: 400;
+    width: 25rem;
+    height: 2rem;
+    /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+    /* background-clip: padding-box; */
+    color: #343434 !important;
+    border: 1px solid #707070;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0.5rem 2.3rem;
+    background-color: #fff;
+    border-radius: 2rem;
+}
+header > section > .bg-black > .n_shop  a{
+    display: block;
+    padding:.5rem !important;
+    margin: .5rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+header > section > .bg-black > .n_shop  a:hover{
+    color: gray;
+    border-color: gray;
+}
+
+
+
+
+.K_logoNew{
+    background-color: #7cd2f2;
+    font-weight: bold;
+    padding: 0.2rem;
+    border-radius: 6px;
+    width: 2.5rem;
+    text-align: center; 
+    position: absolute;
+    top: 100px;
+    z-index: 7;
+}
+/*img-feature*/
+.K_img_product{
+    width: 55%; /*60% 80rem*/
+    height: 35rem;
+    /*margin: 50px auto*/
+    overflow: hidden;
+}
+.K_img_product_main{
+    width: 100%;
+    height: 80%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.K_img_product_main img.K_img-feature{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    transition: 1s;
+    
+}
+.list-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 15%;
+    box-sizing: border-box;
+}
+.list-img div{
+    flex: 1;
+    padding: 5px;
+    cursor: pointer;
+}
+.list-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    
+}
+.K_control{
+    position: absolute;
+    top: 50%;
+    font-size: 4rem;
+    color: black;
+    transform: translateY(-50%);
+
+}
+.K_prev{
+    left: 10px;
+    cursor: pointer;
+}
+.K_next{
+    right: 10px;
+    cursor: pointer;
+}
+.K_active{
+    background-color: black;
+    border-radius: 8px;
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+/**infor a product about tech**/
+.K_info_main{
+    position: absolute;
+    top:110px;
+    right:50px;
+    background-color: #ffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    height: 32rem;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+.K_info_Cost{
+    width: 70%;
+    height: 25%;
+    border-radius: 12px;
+    background-color:rgb(244 244 244);;
+    margin: auto;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+   
+}
+.K_info_Cost_money{
+    font-size: 2rem;
+}
+.K_info_Cost > hr{
+    width: 60%;
+    margin: auto;
+    color: gray;
+}
+.K_tech_infor{
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+.K_techInfor_item{
+    box-sizing: border-box;
+    width: 40%;
+    padding: 1rem 0;
+    
+}
+.K_techInfor_item > img {
+    width: 20%;
+    padding-right: 0.3rem;
+}
+.K_bold{
+    font-weight: bold;
+    color: grey;
+}
+.K_techInfor_item_text{
+    font-weight: 500;
+}
+/***/
+.K_dividePage{
+    margin: 1.5rem auto;
+    width: 80rem;
+    color: gray;
+}
+/*tool*/
+.K_tool_index{
+    margin-bottom: 4rem;
+}
+.K_tools{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.K_tool_item{
+    background-color: #ffff;
+    width: 48%;
+    margin: 0.5rem;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    position: relative;
+}
+.K_tool_item > h2{
+    font-size: 2rem;
+    text-align: center;
+}
+.K_tool-item-content{
+    color: gray;
+    width: 80%;
+    text-align: center;
+    font-weight: 500;
+}
+.K_tool-item-choose{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 20em;
+    bottom: 2rem;
+    cursor: pointer;
+}
+/**why Nkar**/
+.K_whyNkar{
+    margin: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 4rem;
+}
+.K_whyNkar_main{
+    width: 80rem;
+    margin: 0 auto;
+    position: relative;
+    padding: 2rem;
+}
+.K_whyNkar_main-items{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.K_whyNkar_main-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+}
+.K_whyNkar_main-item > div > img{
+    width: 120%;
+}
+.K_whyNkar_main-item-content{
+    text-align: center;
+    width: 80%;
+}
+.K_whyNkar_main-item > h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+/**top car**/
+.K_topCarRated{
+    width: 80rem;
+    margin: 0 auto;
+    position: relative;
+    background-color: #ffff;
+    height: 40rem;
+    border-radius: 12px;
+    margin-bottom: 4rem;
+}
+.K_topCarRated_items{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+    box-sizing: border-box;
+}
+.K_topCarRated_items div{
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.K_topCarRated_items img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    
+}
+.K_topCarRated_items div:hover{
+    width: 800%;
+}
+.K_topCarRated_item_text{
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+/**people think**/
+.K_peopleThink{
+    width: 80rem;
+    margin: 0 auto;
+    position: relative;
+    background-color: #ffff;
+    border-radius: 12px;
+}
+.K_peopleThink_items{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.K_peopleThink_item{
+    background-color: #f8f8f8;
+    width: 45%;
+    padding: 1rem 2rem 1rem 4rem;
+    text-align: justify;
+    border-radius: 12px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.K_peopleThink_item_content1{
+    font-size: 1.2rem;
+    line-height: 1.275;
+    margin-bottom: 1rem;
+}
+.K_peopleThink_item_content2{
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+.K_peopleThink_item_content3 > span{
+    font-size: 1rem;
+}
+.K_peopleThink_item_content3 > img{
+    width: 13%;
+}
+.K_peopleThink_item > img{
+    position: absolute;
+    top: 2rem;
+    left: -3rem;
+    border-radius: 50%;
+    width: 23%;
+}
+/**brand**/

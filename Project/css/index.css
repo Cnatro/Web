@@ -30,6 +30,8 @@ header{
     background-color: black;
     color: white;
     font-size: 1rem;
+    z-index: 999;
+    width: 100%;
 }
 nav{
     width: 80rem;
@@ -44,7 +46,7 @@ nav > div.n_left div#photo{
     background-image: url(../Image/3.png);
     background-color: black;
     background-size: cover;
-    width: 160px;
+    width: 10rem;
     height: 100%;
 }
 nav > div.n_left> ul.n_menu{
@@ -95,6 +97,8 @@ nav > .n_right > .head_search>div{
 }
 nav > .n_right > .head_search .btns{
     position: relative;
+    width: 100%;
+    border-right: 1px solid white;
 }
 nav > .n_right > .head_search .btns  >.btn-glass{
     position: absolute;
@@ -107,9 +111,6 @@ nav > .n_right > .head_search .btns  >.btn-glass .glass{
     font-size: 23px !important;
     padding: .5rem;
 }
-nav > .n_right > .head_search .btns{
-    border-right: 1px solid white;
-}
 nav > .n_right > .head_search .btns  input{
     display: block;
     font-weight: 400;
@@ -120,11 +121,43 @@ nav > .n_right > .head_search .btns  input{
     border: 1px solid #707070;
     font-size: 1rem;
     line-height: 1.375;
-    padding: 0.5rem 1.8rem;
+    padding: 0.5rem 2.2rem;
     background-color: #fff;
     border-radius: 2rem;
     margin-left: 25%;
     box-sizing: border-box;
+}
+nav > .n_right > .head_search .btns #value_search{
+    position:absolute;
+    top: 100%;
+    left: 30%;
+    width: 60%;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: center;
+    display: none;
+    z-index: 99;
+}
+nav > .n_right > .head_search .btns #value_search .list_item{
+    list-style: none;
+    width: 100%;
+    overflow: scroll;
+    height: 15rem;
+}
+nav > .n_right > .head_search .btns #value_search .list_item > li{
+    transition: .4s;
+}
+nav > .n_right > .head_search .btns #value_search .list_item > li > a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: .5rem 0;
+    text-align: center;
+    color: #222;
+}
+nav > .n_right > .head_search .btns #value_search .list_item > li:hover{
+    background-color: #c7c7c7;
 }
 nav > div.n_right >a{
     padding: 0 1rem;
@@ -200,6 +233,7 @@ section#n_background_sl{
     background-repeat: no-repeat;
     color: white;
     font-size: 1rem;
+    position: relative;
 }
 section#n_background_sl > .bg-black{
     width: 100%;
@@ -216,21 +250,22 @@ section#n_background_sl > .bg-black .n_slogan h1{
     text-align: center;
 }
 section#n_background_sl > .bg-black > .n_bgSearch{
-    position: relative;
+    width: 40%;
     margin: 1rem 0;
+    position: relative;
 }
 section#n_background_sl > .bg-black > .n_bgSearch .fa{
     position:absolute;
     top: .1rem;
-    left:0;
+    left:.5rem;
     color: rgba(0, 0, 0, 0.452);
     font-size: 1.6rem !important;
     padding: .6rem;
 }
-section#n_background_sl > .bg-black > .n_bgSearch input{
+section#n_background_sl > .bg-black > .n_bgSearch  input{
     display: block;
     font-weight: 400;
-    width: 25rem;
+    width: 80%;
     height: 2rem;
     /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
     /* background-clip: padding-box; */
@@ -241,6 +276,40 @@ section#n_background_sl > .bg-black > .n_bgSearch input{
     padding: 0.5rem 2.3rem;
     background-color: #fff;
     border-radius: 2rem;
+    margin-left: .5rem;
+}
+section#n_background_sl #value_search{
+    position: absolute;
+    top: 62%;
+    left: 32%;
+    width: 35%;
+    background-color: white;
+    border-radius: 0 0 5px 10px;
+    display: flex;
+    justify-content: center;
+    display: none;
+    z-index: 999;
+    box-shadow: 0 0 10px rgb(0,0,0,1);
+}
+section#n_background_sl #value_search .list_item{
+    list-style: none;
+    width: 100%;
+    overflow: scroll;
+    height: 15rem;
+}
+section#n_background_sl #value_search .list_item > li{
+    transition: .4s;
+}
+section#n_background_sl #value_search .list_item > li > a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: .5rem 0;
+    text-align: center;
+    color: #222;
+}
+section#n_background_sl #value_search .list_item > li:hover{
+    background-color: #c7c7c7;
 }
 section#n_background_sl > .bg-black > .n_shop  a{
     display: block;
@@ -288,10 +357,6 @@ footer .n_bg_black .pro_footer >.footer_text >.ds_text a{
 footer .n_bg_black .pro_footer >.footer_text >.ds_text a:hover{
     color: gray;
 }
-
-
-
-
 footer .n_bg_black .n_icon{ 
     width: 80%;
     margin: 1rem auto;
@@ -354,98 +419,350 @@ footer .n_bg_black .footer_content ul.n_info li:hover a{
 footer .n_bg_black .n_connent_ft{
     padding: 1rem 0;
 }
+
 /* khánh */
-section#k_box{
-    width: 80rem;
-    margin:0 auto;
-    font-size: 1rem;
+.K_bold{
+    font-weight: bold;
+    color: grey;
 }
-.K_phanso2{
+h1,h2,h3,h4,h5,h6{
+    padding : 0.5rem 0;
+}
+main#K_main, .K_tool_index{
+    width: 75rem;
+    margin: 0 auto;
+    position: relative;
+}
+.K_flex{
     display: flex;
-    width: 80%;
-    margin:0 auto;
-    margin-top: 100px;
-    overflow: hidden;
 }
-.K_phanso2 .K_left {
-    width: 50%;
-    box-sizing: border-box;
+.K_flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.K_phanso2 .K_left .K_text_Left{
-    font-size: 1.6rem !important;
-    margin-bottom: 0;
-}
-.K_phanso2 .K_left div.K_logoNew{
+.K_logoNew{
     background-color: #7cd2f2;
     font-weight: bold;
     padding: 0.2rem;
     border-radius: 6px;
     width: 2.5rem;
-    text-align: center;   
+    text-align: center; 
+    position: absolute;
+    top: 100px;
+    z-index: 7;
 }
-.K_phanso2 .K_left img.K_imgNew{
+/*img-feature*/
+.K_img_product{
+    width: 55%; /*60% 80rem*/
+    height: 35rem;
+    /*margin: 50px auto*/
+    overflow: hidden;
+}
+.K_img_product_main{
     width: 100%;
+    height: 80%;
+    margin-bottom: 20px;
+    position: relative;
 }
-.K_phanso2 .K_right {
-    width: 50%;
-    box-sizing: border-box;
-    background-color: #ffff;
-}
-.K_phanso2 .K_right > div{
-    padding: 0 20px;
-}
-.K_phanso2 .K_right .K_nameNewcar{
-    font-weight: 500;
-    font-size: 1.6rem !important;
+.K_img_product_main img.K_img-feature{
+    height: 100%;
     width: 100%;
-}
-.K_phanso2 .K_right .K_nameNewcar  img{
-    width: 30%;
-}
-.K_flex{
-    display: flex;
-}
-.K_phanso2 .K_right .K_costNewCar{
-    border: 2px solid black;
-    background-color: aqua;
-    width: 40%;
-    height: 20%;
-    margin: auto;
+    border-radius: 12px;
+    transition: 1s;
     
 }
-.K_phanso2 .K_right .K_detailNewcar{
-    text-align:justify;
+.list-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 15%;
+    box-sizing: border-box;
 }
-.K_techInfor{
+.list-img div{
+    flex: 1;
+    padding: 5px;
+    cursor: pointer;
+}
+.list-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    
+}
+.K_control{
+    position: absolute;
+    top: 50%;
+    font-size: 4rem;
+    color: black;
+    transform: translateY(-50%);
+
+}
+.K_prev{
+    left: 10px;
+    cursor: pointer;
+}
+.K_next{
+    right: 10px;
+    cursor: pointer;
+}
+.K_active{
+    background-color: black;
+    border-radius: 8px;
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+/**infor a product about tech**/
+.K_info_main{
+    position: absolute;
+    top:16%;
+    right:2rem;
+    background-color: #ffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 1);
+    width: 40%;
+    height: 32rem;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+.K_info_Cost{
+    width: 70%;
+    height: 25%;
+    border-radius: 12px;
+    background-color:rgb(244 244 244);;
+    margin: auto;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+   
+}
+.K_info_Cost_money{
+    font-size: 2rem;
+}
+.K_info_Cost > hr{
+    width: 60%;
+    margin: auto;
+    color: gray;
+}
+.K_tech_infor{
+    height: 50%;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: space-evenly;
     box-sizing: border-box;
 }
-.K_techInfor .K_techInfor_item{
-    justify-content: space-between;
+.K_techInfor_item{
     box-sizing: border-box;
-    padding: 1rem;
-    width: 33%;
+    width: 40%;
+    padding: 1rem 0;
+    
 }
-.K_techInfor .K_techInfor_item .K_techInfor_item_img{
-    width: 18%;
-}
-.K_techInfor .K_techInfor_item .K_techInfor_item_text{
-    width: 79%;
-    font-size: 0.6rem !important;
+.K_techInfor_item > img {
+    width: 20%;
+    padding-right: 0.3rem;
 }
 .K_bold{
     font-weight: bold;
     color: grey;
 }
-.K_techInfor_item_text .K_bold ~ div {
+.K_techInfor_item_text{
     font-weight: 500;
 }
-
-
-#infoBox{
+/***/
+.K_dividePage{
+    margin: 1.5rem auto;
+    width: 80rem;
+    color: gray;
+}
+/*tool*/
+.K_tool_index{
+    margin-bottom: 4rem;
+}
+.K_tools{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.K_tool_item{
+    background-color: #ffff;
+    width: 48%;
+    margin: 0.5rem;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    position: relative;
+}
+.K_tool_item > h2{
+    font-size: 2rem;
+    text-align: center;
+}
+.K_tool-item-content{
+    color: gray;
+    width: 80%;
+    text-align: center;
+    font-weight: 500;
+}
+.K_tool-item-choose{
     position: absolute;
+    background-color: black;
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 20em;
+    bottom: 2rem;
+    cursor: pointer;
+}
+/**why Nkar**/
+.K_whyNkar{
+    margin: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 4rem;
+}
+.K_whyNkar_main{
+    width: 75rem;
+    margin: 0 auto;
+    position: relative;
+    padding: 2rem;
+}
+.K_whyNkar_main-items{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.K_whyNkar_main-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+}
+.K_whyNkar_main-item > div > img{
+    width: 120%;
+}
+.K_whyNkar_main-item-content{
+    text-align: center;
+    width: 80%;
+}
+.K_whyNkar_main-item > h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+/**top car**/
+.K_topCarRated{
+    width: 75rem;
+    margin: 0 auto;
+    position: relative;
+    background-color: #ffff;
+    height: 40rem;
+    border-radius: 12px;
+    margin-bottom: 4rem;
+}
+.K_topCarRated_items{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+    box-sizing: border-box;
+    transition: .4s;
+}
+.K_topCarRated_items div{
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.K_topCarRated_items img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    
+}
+.K_topCarRated_items div:hover{
+    width: 800%;
+}
+.K_topCarRated_item_text{
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+/**people think**/
+.K_peopleThink{
+    width: 75rem;
+    margin: 0 auto;
+    position: relative;
+    background-color: #ffff;
+    border-radius: 12px;
+}
+.K_peopleThink_items{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.K_peopleThink_item{
+    background-color: #f8f8f8;
+    width: 45%;
+    padding: 1rem 2rem 1rem 4rem;
+    text-align: justify;
+    border-radius: 12px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.K_peopleThink_item_content1{
+    font-size: 1.2rem;
+    line-height: 1.275;
+    margin-bottom: 1rem;
+}
+.K_peopleThink_item_content2{
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+.K_peopleThink_item_content3 > span{
+    font-size: 1rem;
+}
+.K_peopleThink_item_content3 > img{
+    width: 13%;
+}
+.K_peopleThink_item > img{
+    position: absolute;
+    top: 2rem;
+    left: -3rem;
+    border-radius: 50%;
+    width: 23%;
+}
+/* nhật */
+#infoBox{
+    /* position: absolute; */
+    position: fixed;
     display: none;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
@@ -487,3 +804,7 @@ section#k_box{
     background-color: gray;
 }
 /*  */
+
+/* @media screen and (max-width :) {
+    
+} */

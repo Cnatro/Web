@@ -30,6 +30,9 @@ body{
 header{
     background-color: black;
     color: white;
+    font-size: 1rem;
+    z-index: 999;
+    width: 100%;
 }
 nav{
     width: 80rem;
@@ -44,7 +47,7 @@ nav > div.n_left div#photo{
     background-image: url(../Image/3.png);
     background-color: black;
     background-size: cover;
-    width: 160px;
+    width: 10rem;
     height: 100%;
 }
 nav > div.n_left> ul.n_menu{
@@ -95,6 +98,8 @@ nav > .n_right > .head_search>div{
 }
 nav > .n_right > .head_search .btns{
     position: relative;
+    width: 100%;
+    border-right: 1px solid white;
 }
 nav > .n_right > .head_search .btns  >.btn-glass{
     position: absolute;
@@ -107,9 +112,6 @@ nav > .n_right > .head_search .btns  >.btn-glass .glass{
     font-size: 23px !important;
     padding: .5rem;
 }
-nav > .n_right > .head_search .btns{
-    border-right: 1px solid white;
-}
 nav > .n_right > .head_search .btns  input{
     display: block;
     font-weight: 400;
@@ -120,11 +122,44 @@ nav > .n_right > .head_search .btns  input{
     border: 1px solid #707070;
     font-size: 1rem;
     line-height: 1.375;
-    padding: 0.5rem 1.8rem;
+    padding: 0.5rem 2.2rem;
     background-color: #fff;
     border-radius: 2rem;
     margin-left: 25%;
     box-sizing: border-box;
+}
+nav > .n_right > .head_search .btns #value_search{
+    position:absolute;
+    top: 100%;
+    left: 30%;
+    width: 60%;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: center;
+    display: none;
+    box-shadow: 0 5px 10px rgb(0,0,0,1);
+    z-index: 9999;
+}
+nav > .n_right > .head_search .btns #value_search .list_item{
+    list-style: none;
+    width: 100%;
+    overflow: scroll;
+    height: 15rem;
+}
+nav > .n_right > .head_search .btns #value_search .list_item > li{
+    transition: .4s;
+}
+nav > .n_right > .head_search .btns #value_search .list_item > li > a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: .5rem 0;
+    text-align: center;
+    color: #222;
+}
+nav > .n_right > .head_search .btns #value_search .list_item > li:hover{
+    background-color: #c7c7c7;
 }
 nav > div.n_right >a{
     padding: 0 1rem;
@@ -190,6 +225,75 @@ nav > div.n_right >a:hover span{
  nav > div.n_left> ul.n_menu > li >.n_sub-menu a:hover{
     background-color: #727171;
  }
+/* phan selection background nen */
+section#n_background_sl{
+    width: 100%;
+    height: 32rem;
+    background-image: url(../Image/4.jpg);
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 1rem;
+}
+section#n_background_sl > .bg-black{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section#n_background_sl > .bg-black .n_slogan h1{
+    font-size: 40px !important;
+    margin: 1rem 0;
+    text-align: center;
+}
+section#n_background_sl > .bg-black > .n_bgSearch{
+    width: 40%;
+    margin: 1rem 0;
+    position: relative;
+}
+section#n_background_sl > .bg-black > .n_bgSearch .fa{
+    position:absolute;
+    top: .1rem;
+    left:.5rem;
+    color: rgba(0, 0, 0, 0.452);
+    font-size: 1.6rem !important;
+    padding: .6rem;
+}
+section#n_background_sl > .bg-black > .n_bgSearch  input{
+    display: block;
+    font-weight: 400;
+    width: 80%;
+    height: 2rem;
+    /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+    /* background-clip: padding-box; */
+    color: #343434 !important;
+    border: 1px solid #707070;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0.5rem 2.3rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    margin-left: .5rem;
+}
+section#n_background_sl > .bg-black > .n_shop  a{
+    display: block;
+    padding:.5rem !important;
+    margin: .5rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+section#n_background_sl > .bg-black > .n_shop  a:hover{
+    color: gray;
+    border-color: gray;
+}
+
+
 footer .n_bg_black{
     width: 100%;
     background-color: black;
@@ -215,6 +319,7 @@ footer .n_bg_black .pro_footer >.footer_text >.ds_text a{
     color: rgb(180, 179, 179);
     transition: .2s;
 }
+
 footer .n_bg_black .pro_footer >.footer_text >.ds_text a:hover{
     color: gray;
 }
@@ -280,11 +385,9 @@ footer .n_bg_black .footer_content ul.n_info li:hover a{
 footer .n_bg_black .n_connent_ft{
     padding: 1rem 0;
 }
-/* khánh */
-
-
 #infoBox{
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     display: none;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
@@ -309,7 +412,6 @@ footer .n_bg_black .n_connent_ft{
 #infoBox #n_exit:hover{
     background-color: #d3d0d0;
 }
-
 /* shop car */
 section#n_shop{
     width: 80rem;
@@ -318,7 +420,7 @@ section#n_shop{
 }
 
 section#n_shop >div {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 section#n_shop .n_logo_car{
@@ -444,9 +546,11 @@ section#n_shop .n_show_car >#n_content_list>  .n_content > div:hover{
 section#n_shop .n_show_car > .n_cars{
     flex-wrap: wrap;
     visibility: hidden;
+    margin-left: 1rem !important;
+    box-sizing: border-box;
+    margin-top: 3rem !important;
 }
 section#n_shop .n_show_car > .n_cars .n_car{
-    padding: .3rem;
     text-align: center;
-    margin-bottom: 1rem;
+    margin: .5rem .4rem !important;
 }

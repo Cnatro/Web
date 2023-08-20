@@ -1,0 +1,600 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.375;
+}
+.n_text_center{
+    text-align: center;
+}
+.n_flex{
+    display: flex;
+}
+.n_center{
+    align-items: center;
+    justify-content: center;
+}
+.n_justify-end{
+    justify-content: flex-end;
+}
+.n_justify-content{
+    justify-content: space-between !important;
+    justify-content: center;
+}
+header{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    z-index: 99;
+    width: 100%;
+}
+nav{
+    width: 80rem;
+    margin: 0 auto;
+    padding: 0 .5rem;
+}
+/* phan ben trai */
+nav > div.n_left{
+    height: 3.125rem;
+}
+nav > div.n_left div#photo{
+    background-image: url(../Image/3.png);
+    background-color: black;
+    background-size: cover;
+    width: 10rem;
+    height: 100%;
+}
+nav > div.n_left> ul.n_menu{
+    list-style: none;
+}
+nav > div.n_left> ul.n_menu > li > a{
+    display: block;
+    text-decoration: none;
+    padding:1rem 1.3rem ;
+    position: relative;
+    color: white;
+}
+nav > div.n_left> ul.n_menu > li > a::after{
+    content: '';
+    background-color: red;
+    width: 0;
+    height: .2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .4s;
+}
+nav > div.n_left> ul.n_menu > li > a:hover::after{
+    width: 100%;
+}
+nav > div.n_left> ul.n_menu > li > a:last-child:after {
+    content: '';
+    background-color: none;
+    width: 0;
+    height: .2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .4s;
+}
+nav > div.n_left> ul.n_menu > li > a:last-child:hover{
+    color: rgb(156, 153, 153);
+}
+/* phan ben phai */
+nav > .n_right{
+    width: 40%; 
+}
+nav > .n_right > .head_search{
+    width: 85%;
+}
+nav > .n_right > .head_search>div{
+    padding: .9rem 0;
+}
+nav > .n_right > .head_search .btns{
+    position: relative;
+    width: 100%;
+    border-right: 1px solid white;
+}
+nav > .n_right > .head_search .btns  >.btn-glass{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 25%;
+}
+nav > .n_right > .head_search .btns  >.btn-glass .glass{
+    color: rgba(0, 0, 0, 0.397);
+    font-size: 23px !important;
+    padding: .5rem;
+}
+nav > .n_right > .head_search .btns  input{
+    display: block;
+    font-weight: 400;
+    width: 70%;
+    /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+    /* background-clip: padding-box; */
+    color: #343434 !important;
+    border: 1px solid #707070;
+    font-size: 1rem;
+    line-height: 1.375;
+    padding: 0.5rem 2.2rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    margin-left: 25%;
+    box-sizing: border-box;
+}
+nav > .n_right > .head_search .btns #value_search{
+    position:absolute;
+    top: 100%;
+    left: 30%;
+    width: 60%;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: center;
+    display: none;
+    z-index: 999;
+    box-shadow: 0 5px 10px rgb(0,0,0,1);
+}
+nav > .n_right > .head_search .btns #value_search .list_item{
+    list-style: none;
+    width: 100%;
+    overflow: scroll;
+    height: 15rem;
+}
+nav > .n_right > .head_search .btns #value_search .list_item > li{
+    transition: .4s;
+}
+nav > .n_right > .head_search .btns #value_search .list_item > li > a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: .5rem 0;
+    text-align: center;
+    color: #222;
+}
+nav > .n_right > .head_search .btns #value_search .list_item > li:hover{
+    background-color: #c7c7c7;
+}
+nav > div.n_right >a{
+    padding: 0 1rem;
+    width: 20%;
+    text-decoration: none;
+    padding: .6rem;
+    transition: .4s;
+    margin-left: 2%;
+    color: white;
+}
+nav > div.n_right > a > #icon{
+    padding:0 .5rem;
+    color: white;
+}
+/* nav > div.n_right >a div#icon,span{
+    color:gray ;
+} */
+nav > div.n_right >a:hover div#icon{
+   color:gray ;
+}
+nav > div.n_right >a:hover span{
+    color:gray ;
+ }
+
+ /*menu con*/
+ nav > div.n_left> ul.n_menu > li{
+    position: relative;
+ }
+ nav > div.n_left> ul.n_menu > li> .n_sub-menu{
+    width: 15rem;
+    list-style: none;
+    position: absolute;
+    top: 2.8rem;
+    background-color: black;
+    /* visibility: hidden;
+     opacity: 0; 
+    transition: visibility .2s; */
+    display: none;
+    margin-top: 1.2rem;
+    z-index: 1;
+ }
+ nav > div.n_left> ul.n_menu > li:hover >.n_sub-menu {
+    /* visibility: visible;  */
+    /* opacity: 1; */
+    display: block;
+ }
+ nav > div.n_left> ul.n_menu > li> .n_sub-menu::after{
+    content: '';
+    border-color: transparent transparent lightgray transparent;
+    border-width: .9rem;
+    border-style: solid;
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+ }
+ nav > div.n_left> ul.n_menu > li >.n_sub-menu a{
+    display: block;
+    text-decoration: none;
+    padding: .9rem 1.5rem ;
+    transition: .4s;
+    color: white;
+ }
+ nav > div.n_left> ul.n_menu > li >.n_sub-menu a:hover{
+    background-color: #727171;
+ }
+footer .n_bg_black{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+footer .n_bg_black > div{
+    width: 80rem;
+    margin: 0 auto;
+}
+footer .n_bg_black  .pro_footer{
+    width: 80%;
+    margin: 0 auto;
+}
+footer .n_bg_black .pro_footer > .footer_text > h3{
+    padding: 1rem .4rem;
+}
+footer .n_bg_black .pro_footer >.footer_text .ds_text{
+    list-style: none;
+}
+footer .n_bg_black .pro_footer >.footer_text >.ds_text a{
+    display: block;
+    padding: .5rem .5rem;
+    color: rgb(180, 179, 179);
+    transition: .2s;
+}
+
+footer .n_bg_black .pro_footer >.footer_text >.ds_text a:hover{
+    color: gray;
+}
+footer .n_bg_black .n_icon{ 
+    width: 80%;
+    margin: 1rem auto;
+  }
+footer .n_bg_black .n_icon .n_icon_left{ 
+    width: 50%;
+}
+footer .n_bg_black .n_icon .n_icon_left .fa{
+    padding: .5rem 1rem;
+    transition: .4s;
+}
+footer .n_bg_black .n_icon .n_icon_left .fa:hover{
+    color: gray;
+}
+footer .n_bg_black .n_icon .n_icon_left .fa:first-child{
+    padding: .5rem !important;
+}
+footer .n_bg_black .n_icon .n_icon_right{
+    width: 50%;
+}
+footer .n_bg_black .n_icon .n_icon_right div{
+    border: .5px solid white;
+    border-radius: .5rem;
+    margin: 0 .5rem;
+    overflow: hidden;
+    transition: .2s;
+    box-sizing: border-box;
+}
+footer .n_bg_black .n_icon .n_icon_right div:hover{
+    border: .5px solid transparent;
+}
+
+footer .n_bg_black .footer_content{
+    font-size: .8rem !important ;
+    width: 80%;
+    margin: 2rem auto;
+}
+footer .n_bg_black .footer_content .n_letter{
+    padding: 2rem 0 0 0;
+}
+footer .n_bg_black .footer_content ul.n_info{
+    list-style: none;
+}
+footer .n_bg_black .footer_content ul.n_info >li a{
+    transition: .4s;
+}
+footer .n_bg_black .footer_content ul.n_info >li> a{
+    display: block;
+    padding: 0 1rem; 
+    margin:.6rem 0;
+    border-right:1px solid rgb(180, 179, 179);
+    color: rgb(180, 179, 179);
+}
+footer .n_bg_black .footer_content ul.n_info>li:last-child> a{
+    border-right:none;
+}
+footer .n_bg_black .footer_content ul.n_info li:hover a{
+    color: gray;
+}
+footer .n_bg_black .n_connent_ft{
+    padding: 1rem 0;
+}
+#infoBox{
+    position: fixed;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 99999;
+  }
+#infoBox #n_exit{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top:1rem;
+    right: 1.2rem;
+    font-size: 1.3rem !important;
+    border-radius: 50%;
+    text-align: center;
+    transition: .4s;
+}
+#infoBox #n_exit:hover{
+    background-color: #d3d0d0;
+}
+
+/* khánh */
+h1,h2,h3,h4,h5,h6{
+    padding : 0.5rem 0;
+}
+section#k_main1{
+    width: 100%;
+}
+main#K_main2,.K_sectionIndex1,.K_sectionIndex2{
+    width: 70rem;
+    margin: 0 auto;
+    position: relative;
+}
+.K_flex{
+    display: flex;
+}
+.K_flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    font-weight: 400;
+    background-color: #f8f8f8;
+    font-size: 1rem;
+}
+h4.K_back > a{
+    color: gray;
+}
+h4.K_back > a:hover{
+    color: black;
+}
+a.linkOfK_anElement{
+    display: block;
+    width: 5rem;
+    padding: 0.5rem;
+    color: gray;
+}
+a.linkOfK_anElement:hover{
+    color: black;
+}
+
+.K_anElement{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*img-feature*/
+.K_img_product{
+    width: 55%; /*60% 80rem*/
+    height: 35rem;
+    /*margin: 50px auto*/
+    overflow: hidden;
+}
+.K_img_product_main{
+    width: 100%;
+    height: 80%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.K_img_product_main img.K_img-feature{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    transition: 1s;
+    
+}
+.list-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 15%;
+    box-sizing: border-box;
+}
+.list-img div{
+    flex: 1;
+    padding: 5px;
+    cursor: pointer;
+}
+.list-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    
+}
+.K_control{
+    position: absolute;
+    top: 50%;
+    font-size: 4rem;
+    color: black;
+    transform: translateY(-50%);
+
+}
+.K_prev{
+    left: 10px;
+    cursor: pointer;
+}
+.K_next{
+    right: 10px;
+    cursor: pointer;
+}
+.K_active{
+    background-color: black;
+    border-radius: 8px;
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+/**infor a product about tech**/
+.K_info_main{
+    position: absolute;
+    top:18%;
+    right:0;
+    background-color: #ffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, .9);
+    width: 42%;
+    height: 32rem;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+.K_info_Cost{
+    width: 70%;
+    height: 25%;
+    border-radius: 12px;
+    background-color:rgb(244 244 244);;
+    margin: auto;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+   
+}
+.K_info_Cost_money{
+    font-size: 2rem;
+}
+.K_info_Cost > hr{
+    width: 60%;
+    margin: auto;
+    color: gray;
+}
+.K_tech_infor{
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+.K_techInfor_item{
+    box-sizing: border-box;
+    width: 40%;
+    padding: 1rem 0;
+    
+}
+.K_techInfor_item > img {
+    width: 20%;
+    padding-right: 0.3rem;
+}
+.K_bold{
+    font-weight: bold;
+    color: grey;
+}
+.K_techInfor_item_text{
+    font-weight: 500;
+}
+.K_aboutCar{
+    width: 55%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: #ffff;
+}
+.K_sectionIndex1 > hr{
+    color: lightgray;
+    width: 55%;
+    position: absolute;
+    top: 5rem;
+    opacity: 0.5;
+}
+.K_aboutCar_item{
+    width: 33%;
+    box-sizing: border-box;
+    text-align: center;
+    border-right: 1px solid lightgray;
+    position: relative;
+}
+.K_aboutCar_item:last-child{
+    border-right: none;
+}
+.K_aboutCar_item:nth-child(3){
+    border-right: none;
+}
+.K_aboutCar_item_type{
+    color: gray;
+    font-weight: bold;
+}
+.K_aboutCar_item img{
+    cursor: pointer;
+}
+.K_addInfor{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    display: none;
+    text-align:justify;
+    padding: 0.5rem;
+    z-index: 5;
+    border-radius: 12px;
+}
+.K_parentOfAddinf:hover .K_addInfor{
+    display: block;
+}
+.K_prosAndCons{
+    margin-top: 1rem;
+    width: 55%;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: #ffff;
+}
+.K_DanhGiaTongQuan,.K_advantages,.K_disadvatages {
+    text-align: justify;
+    padding: 0.3rem 1rem;
+    width: 95%;
+}
+.K_DanhGiaTongQuan > div{
+    overflow: auto;
+    text-align: justify;
+    width: 100%;
+    height: 10rem;   
+}
+.K_advantage > img{
+    width: 1.15rem;
+    padding-right: 0.5rem;
+}
+.K_advantage{
+    padding-bottom: 0.5rem;
+}
+.K_disadvantage > img{
+    width: 1.15rem;
+    padding-right: 0.5rem;
+}
+.K_disadvantage{
+    padding-bottom: 0.5rem;
+}
+/**đói vs những cái mà thông tin mỗi sp có thể tăng lên như check thì kh cần set độ cao**/

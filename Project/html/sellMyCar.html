@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NKAR | Xe mới & được sử dụng để bán | Giá xe & Đánh giá</title>
+    <link rel="stylesheet" href="../css/sellMyCar.css">
+    <script src="../js/sellMyCar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="icon" href="../Image/1.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: #f8f8f8;">
+    <header>
+       <nav class="n_flex n_center ">
+            <div class="n_left n_flex">
+                <a href="../html/index.html" title="NKAR"><div id="photo"></div></a>
+                <ul class="n_menu n_flex n_center">
+                    <li>
+                        <a href="#">Xe mới</a>
+                        <ul class="n_sub-menu">
+                            <li><a href="#">Danh sách xe mới</a></li>
+                            <li><hr style="border: .5px solid white;"></li>
+                            <li><a href="#">Xe điện mới</a></li>
+                            <li><a href="#">SUV mới</a></li>
+                            <li><a href="#">Xe tải mới</a></li>
+                            <li><a href="#">Xe mui trần mới</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Xe cũ</a>
+                        <ul class="n_sub-menu">
+                            <li><a href="#">Danh sách xe cũ</a></li>
+                            <li><hr style="border: .5px solid white;"></li>
+                            <li><a href="#">Xe điện cũ</a></li>
+                            <li><a href="#">SUV cũ</a></li>
+                            <li><a href="#">Xe tải cũ</a></li>
+                            <li><a href="#">Xe mui trần cũ</a></li>
+                        </ul>
+                    </li>
+                    <li><a id="n_news" href="../html/news.html">Tin tức</a></li>
+                    <li><a href="#">Bán xe của bạn</a> </li>
+                </ul>
+            </div>
+            <div class="n_right n_flex n_center" >
+                  <div class=" head_search ">
+                        <div>
+                            <div class="btns ">
+                                <div class="btn-glass">
+                                    <div class="glass fa fa-search"></div>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder=" Tìm kiếm" id="n_search" autocomplete="off"/>
+                                </div>
+                                <div id="value_search">
+                                    <ul class="list_item">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                 <a id="n_login">
+                        <span>Đăng ký</span>
+                        <div id="icon" class="fa fa-user"></div>
+                 </a>
+            </div>
+       </nav>
+    </header>
+    <!-- phần hiển thị login -->
+        <div id="infoBox">
+            <div id="show_login"></div>
+            <div id="n_exit"><i class="fa fa-times" aria-hidden="true"></i></div>
+        </div>
+    <!-- phần sell my car -->
+    <section id="sellMyCar">
+        <div id="n_bg_sellMycar">
+            <div class="n_bg_content">
+                <h1> Định giá xe của bạn miễn phí <br> trong vài phút. Thử ngay !</h1>
+                <span>Nơi bán đáng tin cậy cho bạn.</span>
+            </div>
+            <div class="form_sell">
+                <div class="form">
+                    <h3>Nhập thông tin chi tiết của bạn và nhận giá xe của bạn ngay lập tức</h3>
+                    <div class="choose_btn n_flex n_center">
+                        <div class="n_xp">
+                            <span>Hãng xe</span>
+                            <div class="n_inputs">
+                                <div>
+                                    <input type="text" name="" id="n_brand_car" placeholder="chọn hãng xe" autocomplete="off" data-name-car=""/>
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </div>
+                                <ul class="n_brands">
+                                    <span id="q1">Thương hiệu phổ biến</span>
+                                    <li>Vinfast</li>
+                                    <li>Toyota</li>
+                                    <li>Mercedes-Benz</li>
+                                    <li>BMW</li>
+                                    <li>Ford</li>
+                                    <span id="q1">Tất cả các thương hiệu</span>
+                                    <li>Acura</li>
+                                    <li>Audi</li>
+                                    <li>Austin</li>
+                                    <li>Bentley</li>
+                                    <li>Brabus</li>
+                                    <li>BMW</li>
+                                    <li>Cadillac</li>
+                                    <li>Chery</li>
+                                    <li>Daihatsu</li>
+                                    <li>Ferrari</li>
+                                    <li>Ford</li>
+                                    <li>Honda</li>
+                                    <li>Hyundai</li>
+                                    <li>Lamborghini</li>
+                                    <li>Toyota</li>
+                                    <li>Tesla</li>
+                                    <li>Vinfast</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="n_xp">
+                            <span>Dòng xe</span>
+                            <div class="n_inputs">
+                                <div>
+                                    <input type="text" name="" id="n_vehicles" placeholder="chọn dòng xe" autocomplete="off"/>
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </div>
+                                <ul class="n_brands">
+                                    <li>Vinfast</li>
+                                    <li>Toyota</li>
+                                    <li>Mercedes-Benz</li>
+                                    <li>BMW</li>
+                                    <li>Ford</li>
+                                    <li>Acura</li>
+                                    <li>Audi</li>
+                                    <li>Austin</li>
+                                    <li>Bentley</li>
+                                    <li>Brabus</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="n_xp">
+                            <span>Năm sản xuất</span>
+                            <div class="n_inputs">
+                                <div>
+                                    <input type="text" name="" id="n_year" placeholder="chọn năm sản xuất" autocomplete="off"/>
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </div>
+                                <ul class="n_brands">
+                                    <li>Acura</li>
+                                    <li>Audi</li>
+                                    <li>Austin</li>
+                                    <li>Bentley</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="n_xp">
+                            <span>Phiên bản</span>
+                            <div class="n_inputs">
+                                <div>
+                                    <input type="text" name="" id="n_pb" placeholder="Chọn phiên bản" autocomplete="off"/>
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </div>
+                                <ul class="n_brands">
+                                    <li>Tiêu chuẩn</li>
+                                    <li>Nâng cao</li>
+                                    <li>Cao cấp</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="n_xp">
+                            <span>Động cơ</span>
+                            <div class="n_inputs">
+                                <div>
+                                    <input type="text" name="" id="n_dx" placeholder="Chọn động cơ" autocomplete="off"/>
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="n_xp">
+                            <span>Hộp số</span>
+                            <div class="n_inputs">
+                                <div>
+                                    <input type="text" name="" id="n_hs" placeholder="Chọn hộp số" autocomplete="off"/>
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="n_xp">
+                            <span>Số km đã đi</span>
+                            <div class="n_inputs">
+                                <div>
+                                    <input type="text" name="" id="n_km" placeholder="Số km đã đi" autocomplete="off"/>
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </div>
+                                <ul class="n_brands">
+                                    <li>0 - 50,000 km</li>
+                                    <li>50,000 - 100,000 km</li>
+                                    <li>100,000 - 150,000 km</li>
+                                    <li>150,000 - 200,000 km</li>
+                                    <li>200,000 - 250,000 km</li>
+                                    <li>250,000 - 300,000 km</li>
+                                    <li>350,000 - 400,000 km</li>
+                                    <li>400,000 - 450,000 km</li>
+                                    <li>450,000 - 500,000 km</li>
+                                    <li>500,000 km hoặc lớn hơn</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="n_xp">
+                            <span>Số điện thoại</span>
+                            <div class="n_inputs">
+                                <div>
+                                    <input type="text" name="" id="" placeholder="035XXXXXXX" autocomplete="off"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="n_xp">
+                            <span>Nhập số tiền</span>
+                            <div class="n_inputs">
+                                <div>
+                                    <input type="text" name="" id="n_t" placeholder="Tiền" autocomplete="off"/>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="file" name="fileupload" accept="image"/>
+                    </div>
+                </div>
+                <div class="btn_sell">                
+                    <input type="button" value="Xác nhận"/>
+                </div>
+                <div id="content_footer">Để tiếp tục, tôi đồng ý với <a href="#">Chính sách quyền riêng tư</a>, <a href="#">Điều khoản sử dụng</a> & <a href="#">Điều khoản & điều kiện niêm yết</a>.</div>
+            </div>
+        </div>
+    </section>
+    <section id="n_instructs">
+        <div class="instruct">
+            <div>
+                <h1 class="n_text_center">4 bước bán xe chỉ trong 1 giờ cùng NKAR</h1>
+                <div class="n_content_instruct n_flex n_justify-content">
+                    <div>
+                        <div id="n_conner"><span>1</span></div>
+                        <img src="../Image/calendar.svg" alt="">
+                        <p>1. Định giá và đặt lịch kiểm tra xe miễn phí</p>
+                    </div>
+                    <div>
+                        <div id="n_conner"><span>2</span></div>
+                        <img src="../Image/mail.svg" alt="">
+                        <p>2. Nhận kết quả tình trạng xe và giá đề xuất</p>
+                    </div>
+                    <div>
+                        <div id="n_conner"><span>3</span></div>
+                        <img src="../Image/car.svg" alt="">
+                        <p>3. Carmudi tiến hành mọi thủ tục mua-bán xe trong 24 giờ</p>
+                    </div>
+                    <div>
+                        <div id="n_conner"><span>4</span></div>
+                        <img src="../Image/money.svg" alt="">
+                        <p>4. Chủ xe nhận thanh toán nhanh - gọn trong vòng 1 giờ</p>
+                    </div>
+                </div>
+                <div id="btn_dk"><input type="button" value="Đăng ký hỗ trợ ngay" /></div>
+            </div>  
+        </div>
+    </section>
+    <section>
+        <div id="n_reason">
+            <div>
+                <h1>Lí do bạn nên bán xe tại NKAR</h1>
+                <div class="bg_reasons n_flex">
+                    <div><img src="../Image/reason_bg.jpg" alt=""></div>
+                    <div id="n_icons">
+                        <div class="n_flex">
+                            <div id="icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                            <div id="n_content_icon"><p>Hẹn kiểm tra tại nơi bạn trọn</p></div>
+                        </div>
+                        <div class="n_flex">
+                            <div id="icon"><i class="fa fa-car" aria-hidden="true"></i></i></div>
+                            <div id="n_content_icon"><p>Định giá minh bạch và tốt nhất thị trường</p></div>
+                        </div>
+                        <div class="n_flex">
+                            <div id="icon"><i class="fa fa-clock-o" aria-hidden="true"></i></i></div>
+                            <div id="n_content_icon"><p>Hoàn tất thủ tục, thanh toán nhanh chóng</p></div>
+                        </div>
+                        <div class="n_flex">
+                            <div id="icon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></i></div>
+                            <div id="n_content_icon"><p>Bảo mật thông tin từ A đến Z</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="n_bg_login">
+        <div id="n_login">
+            <div>
+                <h1>Đăng kí kiểm định miễn phí</h1>
+                <div class="n_content n_flex">
+                    <div class="n_content_l n_flex n_center">
+                        <div>
+                            <div class="n_flex">
+                                <div id="min_circle">
+                                    <div id="n_circle"></div>
+                                </div>
+                                <div id="n_info">Nhập thông tin cơ bản của xe</div>
+                            </div>
+                            <div id="n_boder_left"></div>
+    
+                            <div class="n_flex">
+                                <div id="min_circle">
+                                    <div id="n_circle"></div>
+                                </div>
+                                <div id="n_info">Nhận giá ước tính theo tình trạng xe</div>
+                            </div>
+                            <div id="n_boder_left"></div>
+    
+                            <div class="n_flex">
+                                <div id="min_circle">
+                                    <div id="n_circle"></div>
+                                </div>
+                                <div id="n_info">Đặt lịch kiểm tra xe và giao dịch</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="n_connent_r"><img src="../Image/bg_login.png" alt=""></div>
+                </div>
+                <div id="btn_dk"><input type="button" value="Đăng ký hỗ trợ ngay" /></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="n_products">
+            <h1>Xe được thẩm định và đang bán bởi NKAR</h1>
+            <div id="n_slide_car">
+                <div class="n_product">
+                    <div id="n_photo"><img src="../Image/22.jpg" alt=""></div>
+                    <div class="n_contesnt_cars">
+                        <h3 id="name_car" class="n_text_center">2015 Porsche Macan S 2.0</h3>
+                        <div class="n_specfications n_flex n_justify-content">
+                            <div>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                <span id="year_car">2015</span>
+                            </div>
+                            <div>
+                                <img src="../Image/km.svg" alt="">
+                                <span id="year_car">66.000 km</span>
+                            </div>
+                            <div>
+                                <img src="../Image/fuel.svg" alt="">
+                                 <span id="year_car">Xăng</span>
+                             </div>
+                            <div>
+                                <img src="../Image/transmission.svg" alt="">
+                                <span id="year_car">Tự động</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="n_money">1 tỷ 200 triệu</div>
+                    <div id="n_vt">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>Hồ Chí Minh</span>
+                    </div>
+                </div>
+                <div class="n_product">
+                    <div id="n_photo"><img src="../Image/23.jpg" alt=""></div>
+                    <div class="n_contesnt_cars">
+                        <h3 id="name_car" class="n_text_center">2020 Audi A6 Base 3.0 V6</h3>
+                        <div class="n_specfications n_flex n_justify-content">
+                            <div>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                <span id="year_car">2020</span>
+                            </div>
+                            <div>
+                                <img src="../Image/km.svg" alt="">
+                                <span id="year_car">21.000 km</span>
+                            </div>
+                            <div>
+                                <img src="../Image/fuel.svg" alt="">
+                                 <span id="year_car">Xăng</span>
+                             </div>
+                            <div>
+                                <img src="../Image/transmission.svg" alt="">
+                                <span id="year_car">Tự động</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="n_money">2 tỷ 99 triệu</div>
+                    <div id="n_vt">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>Hồ Chí Minh</span>
+                    </div>
+                </div> 
+                <div class="n_product">
+                    <div id="n_photo"><img src="../Image/25.jpg" alt=""></div>
+                    <div class="n_contesnt_cars">
+                        <h3 id="name_car" class="n_text_center">2020 Mitsubishi Pajero Sport AT 2.4</h3>
+                        <div class="n_specfications n_flex n_justify-content">
+                            <div>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                <span id="year_car">2020</span>
+                            </div>
+                            <div>
+                                <img src="../Image/km.svg" alt="">
+                                <span id="year_car">25.300 km</span>
+                            </div>
+                            <div>
+                                <img src="../Image/fuel.svg" alt="">
+                                 <span id="year_car">Xăng</span>
+                             </div>
+                            <div>
+                                <img src="../Image/transmission.svg" alt="">
+                                <span id="year_car">Tự động</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="n_money">989 triệu</div>
+                    <div id="n_vt">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>Hồ Chí Minh</span>
+                    </div>
+                </div> 
+                <div class="n_product">
+                    <div id="n_photo"><img src="../Image/21.jpg" alt=""></div>
+                    <div class="n_contesnt_cars">
+                        <h3 id="name_car" class="n_text_center">2020 Mercedes-Benz C Class C200 Exclusive 2.0 I4</h3>
+                        <div class="n_specfications n_flex n_justify-content">
+                            <div>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                <span id="year_car">2020</span>
+                            </div>
+                            <div>
+                                <img src="../Image/km.svg" alt="">
+                                <span id="year_car">28.900 km</span>
+                            </div>
+                            <div>
+                                <img src="../Image/fuel.svg" alt="">
+                                 <span id="year_car">Xăng</span>
+                             </div>
+                            <div>
+                                <img src="../Image/transmission.svg" alt="">
+                                <span id="year_car">Tự động</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="n_money">1 tỷ 389 triệu</div>
+                    <div id="n_vt">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>Hồ Chí Minh</span>
+                    </div>
+                </div> 
+                <div class="n_product">
+                    <div id="n_photo"><img src="../Image/27.jpg" alt=""></div>
+                    <div class="n_contesnt_cars">
+                        <h3 id="name_car" class="n_text_center">2019 Mitsubishi Outlander CVT 2.0</h3>
+                        <div class="n_specfications n_flex n_justify-content">
+                            <div>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                <span id="year_car">2019</span>
+                            </div>
+                            <div>
+                                <img src="../Image/km.svg" alt="">
+                                <span id="year_car">55.000 km</span>
+                            </div>
+                            <div>
+                                <img src="../Image/fuel.svg" alt="">
+                                 <span id="year_car">Xăng</span>
+                             </div>
+                            <div>
+                                <img src="../Image/transmission.svg" alt="">
+                                <span id="year_car">Tự động</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="n_money">718 triệu</div>
+                    <div id="n_vt">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>Hồ Chí Minh</span>
+                    </div>
+                </div>
+                <div class="n_product">
+                    <div id="n_photo"><img src="../Image/28.jpg" alt=""></div>
+                    <div class="n_contesnt_cars">
+                        <h3 id="name_car" class="n_text_center">2016 Mazda 3 Base 2.0</h3>
+                        <div class="n_specfications n_flex n_justify-content">
+                            <div>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                <span id="year_car">2016</span>
+                            </div>
+                            <div>
+                                <img src="../Image/km.svg" alt="">
+                                <span id="year_car">58.800 km</span>
+                            </div>
+                            <div>
+                                <img src="../Image/fuel.svg" alt="">
+                                 <span id="year_car">Xăng</span>
+                             </div>
+                            <div>
+                                <img src="../Image/transmission.svg" alt="">
+                                <span id="year_car">Tự động</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="n_money">488 triệu</div>
+                    <div id="n_vt">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>Hồ Chí Minh</span>
+                    </div>
+                </div>
+                <div class="n_product">
+                    <div id="n_photo"><img src="../Image/29.jpg" alt=""></div>
+                    <div class="n_contesnt_cars">
+                        <h3 id="name_car" class="n_text_center">KIA SOLUTO 2020 AT LUXURY</h3>
+                        <div class="n_specfications n_flex n_justify-content">
+                            <div>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                <span id="year_car">2020</span>
+                            </div>
+                            <div>
+                                <img src="../Image/km.svg" alt="">
+                                <span id="year_car">80.000 km</span>
+                            </div>
+                            <div>
+                                <img src="../Image/fuel.svg" alt="">
+                                 <span id="year_car">Xăng</span>
+                             </div>
+                            <div>
+                                <img src="../Image/transmission.svg" alt="">
+                                <span id="year_car">số sàn</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="n_money">788 triệu</div>
+                    <div id="n_vt">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>Hồ Chí Minh</span>
+                    </div>
+                </div>
+            </div>
+            <div class="n_buttons">
+                <button id="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                <button id="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+           </div>
+        </div>
+    </section>
+    <section id="n_bg_comment">
+        <div class="n_cmt">
+            <h1>NKAR tự hào hỗ trợ rất nhiều chủ xe</h1>
+           <div class="n_list_cmt">
+               <div id="n_cmt_1" class="n_flex n_center">
+                    <div>
+                        <div id="n_cmt_content">
+                                <h4>Nhân viên rất nhiệt tình</h4>
+                                <p>Thật khó để tìm mua được chiếc xe máy móc và nội thất ưng ý , nhưng sau đó Tôi tình cờ biết đến Carmudi. Họ có đội ngũ kiểm tra xe tại nhà, hoàn thành các thủ tục giấy tờ nhanh. Thái độ nhân viên tốt.</p>
+                            <div id="cmt_icon"><img src="../Image/testimonial.svg" alt=""></div>
+                        </div>
+                        <div id="n_avt"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+                    </div>
+                    <div>
+                        <div id="n_cmt_content">
+                                <h4>Quy trình đơn và giản nhanh chóng</h4>
+                                <p>Mình đăng ký thử kiểm định miễn phí bên NKAR thấy nhân viên tới tận nhà kiểm tra nhiệt tình, giá mua gửi kèm bảng kết quả kiểm định rõ ràng, chốt giá xong là lo hết phần giấy tờ giúp mình.</p>
+                            <div id="cmt_icon"><img src="../Image/testimonial.svg" alt=""></div>
+                        </div>
+                        <div id="n_avt"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+                    </div>
+               </div>
+                <div id="n_cmt_1" class="n_flex n_center">
+                    <div>
+                        <div id="n_cmt_content">
+                                <h4>Trải nghiệm tuyệt vời</h4>
+                                <p>NKAR trả giá cao nhất nên mình chọn bán cho bên này. Mình chủ động được thời gian, không mất công qua lại nhiều nơi và khi chốt mình nhận thanh toán ngay trong ngày. Rất nhanh gọn !</p>
+                            <div id="cmt_icon"><img src="../Image/testimonial.svg" alt=""></div>
+                        </div>
+                        <div id="n_avt"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+                    </div>
+                    <div>
+                        <div id="n_cmt_content">
+                                <h4>Chua đáo và minh bạch</h4>
+                                <p>Tôi có gửi thông tin bán xe cho nhiều bên nhưng sau quá trình làm việc, Tôi đánh giá bên NKAR có nhân viên hỗ trợ nhanh, chuyên nghiệp, minh bạch và nhất là báo giá tốt so với bên khác.</p>
+                            <div id="cmt_icon"><img src="../Image/testimonial.svg" alt=""></div>
+                        </div>
+                        <div id="n_avt"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+                <div id="n_cmt_1" class="n_flex n_center">
+                    <div>
+                        <div id="n_cmt_content">
+                                <h4>Dịch vụ kiểm tra và giấy tờ tại nhà thật tiện lợi!</h4>
+                                <p>Bán xe không còn là vấn đề khó khăn khi tôi biết đến NKAR. Dịch vụ kiểm tra xe và hoàn tất giấy tờ ngay tại nhà thật sự tiện lợi. Tôi đã tiết kiệm được nhiều thời gian và nhận được sự hỗ trợ nhiệt tình từ đội ngũ.</p>
+                            <div id="cmt_icon"><img src="../Image/testimonial.svg" alt=""></div>
+                        </div>
+                        <div id="n_avt"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+                     </div>
+                    <div>
+                        <div id="n_cmt_content">
+                                <h4>Dịch vụ đáng tin cậy, nhân viên thấu hiểu</h4>
+                                <p>NKAR đã mang lại cho tôi trải nghiệm bán xe trực tuyến hoàn hảo. Dịch vụ kiểm tra xe tận nơi không chỉ giúp tôi thấy yên tâm về tình trạng xe, mà còn giúp tôi tiết kiệm thời gian và công sức. Sự thấu hiểu và sẵn sàng lắng nghe của nhân viên thực sự tạo nên sự tin cậy và hài lòng.</p>
+                            <div id="cmt_icon"><img src="../Image/testimonial.svg" alt=""></div>
+                        </div>
+                        <div id="n_avt"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+                <div id="n_cmt_1" class="n_flex n_center">
+                    <div>
+                        <div id="n_cmt_content">
+                                <h4>Nhân viên rất nhiệt tình</h4>
+                                <p>Thật khó để tìm mua được chiếc xe máy móc và nội thất ưng ý , nhưng sau đó Tôi tình cờ biết đến Carmudi. Họ có đội ngũ kiểm tra xe tại nhà, hoàn thành các thủ tục giấy tờ nhanh. Thái độ nhân viên tốt.</p>
+                            <div id="cmt_icon"><img src="../Image/testimonial.svg" alt=""></div>
+                        </div>
+                        <div id="n_avt"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+                    </div>
+                    <div>
+                        <div id="n_cmt_content">
+                            <h4>Trải nghiệm tuyệt vời</h4>
+                            <p>NKAR trả giá cao nhất nên mình chọn bán cho bên này. Mình chủ động được thời gian, không mất công qua lại nhiều nơi và khi chốt mình nhận thanh toán ngay trong ngày. Rất nhanh gọn !</p>
+                            <div id="cmt_icon"><img src="../Image/testimonial.svg" alt=""></div>
+                        </div>
+                        <div id="n_avt"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+                <div id="n_cmt_1" class="n_flex n_center">
+                    <div>
+                        <div id="n_cmt_content">
+                                <h4>Nhân viên rất nhiệt tình</h4>
+                                <p>Thật khó để tìm mua được chiếc xe máy móc và nội thất ưng ý , nhưng sau đó Tôi tình cờ biết đến Carmudi. Họ có đội ngũ kiểm tra xe tại nhà, hoàn thành các thủ tục giấy tờ nhanh. Thái độ nhân viên tốt.</p>
+                            <div id="cmt_icon"><img src="../Image/testimonial.svg" alt=""></div>
+                        </div>
+                        <div id="n_avt"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+                    </div>
+                    <div>
+                        <div id="n_cmt_content">
+                            <h4>Chua đáo và minh bạch</h4>
+                            <p>Tôi có gửi thông tin bán xe cho nhiều bên nhưng sau quá trình làm việc, Tôi đánh giá bên NKAR có nhân viên hỗ trợ nhanh, chuyên nghiệp, minh bạch và nhất là báo giá tốt so với bên khác.</p>
+                            <div id="cmt_icon"><img src="../Image/testimonial.svg" alt=""></div>
+                        </div>
+                        <div id="n_avt"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="n_question">
+        <div id="n_bg_question">
+            <h1>Một số câu hỏi khi cần bán xe</h1>
+            <div>
+                <div class="list_question">
+                    <div>
+                        <div id="question">
+                            <span>Vì sao nên bán xe tại NKAR</span>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div id="n_splace_answer">
+                            <p>
+                                - Khách hàng đặt lịch và tùy chọn nơi kiểm kiểm tra: tại NKAR hoặc tại nhà theo yêu cầu của quý khách.
+                                <br>
+                                - Định giá tối ưu & minh bạch - Xe của bạn được định giá cao hơn giá thị trường. Toàn bộ quá trình giao dịch diễn ra trực tiếp giữa chủ xe và NKAR.
+                                <br>
+                                - Hoàn tất thủ tục nhanh chóng, thanh toán trong vòng 24h - Toàn bộ quá trình mua bán diễn ra nhanh chóng. Thanh toán ngay lập tức sau khi hoàn thành các thủ tục giấy tờ pháp lý về việc chuyển quyền sở hữu xe.
+                                <br>
+                                - Bảo mật thông tin từ A đến Z - Toàn bộ quá trình từ đăng ký kiểm định giá đến hoàn tất giao dịch đều được NKAR cam kết bảo mật thông tin.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="question">
+                            <span>Quy trình bán xe tại NKAR diễn ra như thế nào</span>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div id="n_splace_answer">
+                            <p>
+                                NKAR luôn hỗ trợ khách hàng để quá trình mua xe diễn ra dễ dàng hơn:
+                                <br>
+                                Bước 1: Khách hàng định giá xe tại NKAR.vn và đặt lịch kiểm tra xe miễn phí
+                                <br>
+                                Bước 2: Sau đó, chuyên viên của NKAR sẽ kiểm tra xe và đưa ra mức giá đề xuất cho quý khách hàng
+                                <br>
+                                Bước 3: NKAR hỗ trợ hoàn tất thủ tục pháp lý để chuyển quyền sở hữu xe trong vòng 24 giờ
+                                <br>
+                                Bước 4: Ngay sau khi hoàn tất, NKARs sẽ thanh toán cho bạn trong vòng 1 giờ theo mức giá chốt bán
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="question">
+                            <span>Lí do NKAR thu mua được giá cao</span>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div id="n_splace_answer">
+                            <p>
+                                NKAR thu mua xe đã qua sử dụng với mức giá cao hơn thị trường vì các lí do:
+                                <br>
+                                - Không mất phí trung gian, chủ xe trực tiếp bán xe cho NKAR.
+                                <br>
+                                - Giá trị xe được tính toán dựa trên thuật toán AI kết hợp với kinh nghiệm của chuyên gia ô tô, để đảm bảo chiếc xe được định giá đúng với giá trị nhất.
+                                <br>
+                                - Ngoài ra, NKAR luôn đặt quyền lợi của quý khách hàng lên hàng đầu, vì vậy khi sử dụng dịch vụ của NKAR bạn sẽ nhận được những lợi ích sau:
+                                <br>
+                                <br>
+                                1.Định giá và đặt lịch kiểm tra xe miễn phí
+                                <br>
+                                2. Nhận kết quả tình trạng xe và giá đề xuất
+                                <br>
+                                3. Carmudi tiến hành mọi thủ tục mua bán xe trong 24 giờ
+                                <br>
+                                4. Chủ xe nhận thanh toán nhanh gọn trong vòng 1 giờ
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="question">
+                            <span>Cần chuẩn bị thủ tục hồ sơ gì khi bán xe tại NKAR</span>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div id="n_splace_answer">
+                            <p>
+                                Hồ sơ giấy tờ cần chuẩn bị để bán xe nhanh chóng:
+                                <br>
+                                <br>
+                                Giấy tờ gốc của chủ xe, bao gồm:
+                                <br>
+                                - CCCD của người đứng tên trên Đăng ký xe
+                                <br>
+                                - Giấy tờ liên quan đến tình trạng hôn nhân: Xác nhận độc thân/ đăng ký kết hôn/ Xác nhận ly hôn.
+                                <br>
+                                - Giấy xác nhận quyền thừa kế/ cho/ biếu/ tặng (nếu có)
+                                <br>
+                                - CCCD của vợ hoặc chồng (nếu có)
+                                <br>
+                                Giấy tờ gốc của xe, bao gồm: 
+                                <br>
+                                - Đăng ký xe
+                                <br>
+                                - Đăng kiểm xe
+                                <br>
+                                - Sổ bảo hành (nếu có)
+                                <br>
+                                - Bảo hiểm vật chất xe (nếu có)
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="question">
+                            <span>Hình thức thanh toán giao dịch cho khách hàng của NKAR</span>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <div id="n_splace_answer">
+                            <p>
+                                Chúng tôi sẽ thanh toán qua tài khoản ngân hàng của bạn NGAY SAU KHI hoàn thành các thủ tục giấy tờ pháp lý về việc chuyển quyền sở hữu xe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="bottom_banner">
+        <div id="bg_m">
+           <div>
+                <div class="content_buttom">
+                    <p>Bán xe một cách nhanh chóng <br> với giá tốt</p>
+                </div>
+                <div id="btn_dk"><input type="button" value="Đăng ký hỗ trợ ngay" /></div>
+           </div>
+        </div>
+    </section>
+    <div id="goToTop"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+    <!-- nhật footer-->
+    <footer>
+        <div class="n_bg_black" title="chân trang">
+            <div>
+                <div class="pro_footer n_flex n_justify-content">
+                    <div class="footer_text">
+                        <h3>Các sản phẩm</h3>
+                        <ul class="ds_text">
+                            <li><a href="#" title="ô tô đã qua sử dụng">Đã qua sử dụng</a></li>
+                            <li><a href="#" title="ô tô mới">Mới</a></li>
+                            <li><a href="#">Bán ô tô của bạn</a></li>
+                            <li><a href="#">Xe điện</a></li>
+                            <li><a href="#">Quân đội</a></li>
+                            <li><a href="#">Mua trực tuyến</a></li>
+                            <li><a href="#">Sơ đồ trang web</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_text">
+                        <h3>Tài nguyên</h3>
+                        <ul class="ds_text">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Câu trả lời thường gặp</a></li>
+                            <li><a href="#">Liên hệ chúng tôi</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_text">
+                        <h3>Làm việc với NKAR</h3>
+                        <ul class="ds_text">
+                            <li><a href="#">Đại lý</a></li>
+                            <li><a href="#">Đối tác</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_text">
+                        <h3>Về chúng tôi</h3>
+                        <ul class="ds_text">
+                            <li><a href="#">NKAR</a></li>
+                            <li><a href="#">Đội</a></li>
+                            <li><a href="#">Nghề nghiệp</a></li>
+                            <li><a href="#">Nhà phát triển</a></li>
+                            <li><a href="#">Nhà đầu tư</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="n_icon n_flex">
+                    <div class="n_icon_left">
+                        <div class="fa fa-facebook-square"></div>
+                        <div class="fa fa-twitter"></div>
+                        <div class="fa fa-instagram"></div>
+                        <div class="fa fa-linkedin"></div>
+                        <div class="fa fa-youtube-play"></div>
+                    </div>
+                    <div class="n_icon_right n_flex n_justify-end">
+                       <div> <img src="../Image/app1.svg" alt=""></div>
+                       <div><img src="../Image/app2.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="footer_content">
+                   <div class="n_letter n_text_center">
+                     <p>Nếu có thắc mắc về Dịch vụ Mua ô tô TrueCar, vui lòng gọi 1-888-878-3227 </p>
+                     <p>TrueCar có nghĩa vụ theo hợp đồng với các Đại lý được Chứng nhận phải đáp ứng các yêu cầu nhất định về dịch vụ khách hàng và hoàn thành Chương trình Chứng nhận Đại lý của TrueCar.</p>
+                     <p>TrueCar không môi giới, bán hoặc cho thuê xe cơ giới. Trừ khi có ghi chú khác, tất cả các phương tiện hiển thị trên trang web này đều được chào bán bởi các đại lý xe cơ giới được cấp phép. Tất cả phương tiện giao thông đều phụ thuộc vào giá trước đó. Khi truy cập trang web này, bạn đồng ý với Điều khoản dịch vụ và Chính sách quyền riêng tư của TrueCar.</p>
+                    </div>
+                    <div class="n_infos">
+                        <ul class="n_info n_flex n_center">
+                            <li><a href="#">Điều khoản dịch vụ</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Không bán hoặc chia sẻ thông tin cá nhân của Tôi</a></li>
+                        </ul>
+                    </div>
+                    <div class="n_connent_ft n_text_center">
+                        <p>&copy; và ™ TrueCar, Inc. Bảo lưu mọi quyền. Ảnh về xe &copy; Evox Images &copy; 1986- 2023 Chrome Data Solutions, LP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
