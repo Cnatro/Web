@@ -96,7 +96,7 @@ ul.menu-chill-parent a{
     outline: none;
     border: 0px solid black;
     background-color: #161617;
-    width: 90%;
+    width: 80%;
     height: 100%;
     color: #ffff;
 }
@@ -215,5 +215,10 @@ ul.menu-chill-parent a{
     }
     .navbar-menu-chill-parent{
         height: auto;
+    }
+}
+@media (min-width: 576px){
+    .navbar-searchs #navbar-search #search{
+        width: 90%;
     }
 }
