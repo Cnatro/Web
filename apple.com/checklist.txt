@@ -1,0 +1,14 @@
+- định nghĩa các class dùng chung
+- tạo cấu trúc html 
+- css cho navbar-brand
+- css cho main-menu
+- css cho navbar-search
+- css cho wrapper-content
+- cố dịnh thanh navbar khi scroll
+- tư duy responsive
+- ẩn các phần tử không cần thiết
+- tạo icon-navbar-toggle
+- phân tích sự kiện click vào icon-navbar-toggle
+- tự động ẩn menu khi resize or scroll
+- tối ưu và tổng kết
+(deal 1 tuần)

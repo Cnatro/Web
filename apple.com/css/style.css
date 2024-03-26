@@ -1,0 +1,219 @@
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+#header{
+    position: relative;
+    height: 50px;
+}
+body{
+    font-size: 12px;
+    line-height: 1.15;
+}
+nav{
+    background-color: #161617;
+    position: fixed;
+    width: 100%;
+}
+#navbar-brand-links{
+    display: block;
+    padding: 15px;
+    flex-grow: 1;
+}
+#navbar-brand{
+    height: 16px;
+    width: auto;
+}
+ul#main-menu{
+    display: none;
+    list-style: none;
+    padding: 0px 10px;
+    margin: 0;
+    width: 797px;
+}
+ul#main-menu >li > a{
+    display: block;
+    padding: 15px 8px;
+    color: #a19f9f;
+    text-decoration: none;
+}
+.search-icon{
+    color: #a19f9f;
+    font-size: 16px;
+    padding: 15px 10px;
+    margin: 0 5px;
+}
+.navbar-login{
+    color: #a19f9f;
+    font-size: 16px;
+    padding: 15px 10px;
+    margin: 0 5px;
+}
+/* submenu */
+.navbar-menu-chill-parent{
+    position: absolute; 
+    /* cha ở nav */
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161617;
+    margin-bottom: 100px;
+    display: none;
+}
+.navbar-menu-chill-parent ul.menu-chill-parent{
+    list-style: none;
+    padding:5px;
+    margin-bottom: 50px;
+}
+ul.menu-chill-parent a{
+    display: block;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #a19f9f;
+    font-size: 14px;
+}
+/* end */
+/* sub menu search */
+.navbar-searchs .navbar-menu-chill-parent #navbar-search{
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 24px;
+    padding: 16px;
+}
+.navbar-searchs #navbar-search #search{
+    outline: none;
+    border: 0px solid black;
+    background-color: #161617;
+    width: 90%;
+    height: 100%;
+    color: #ffff;
+}
+.navbar-searchs #navbar-search .icon-search{
+    color: #838282;
+    font-size: 20px;
+    padding-left: 10px;
+}
+/* end */
+.navbar-icon-toggle{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.navbar-icon-toggle .icon-top{
+    position: absolute;
+    top: 3px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: transform .25s ease-in-out;
+    
+}
+.navbar-icon-toggle .icon-bottom{
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: transform .25s ease-in-out;
+}
+.rotate-icon-top{
+    top: 9px !important;
+    transform: rotate(45deg);
+}
+.rotate-icon-bottom{
+    bottom: 9px !important;
+    transform: rotate(-45deg);
+}
+#menu-responsive{
+    flex-basis: 100%;
+    list-style: none;
+    height: 100vh;
+    padding: 0;
+    display: none;
+}
+#menu-responsive >li{
+    transition: all .25s ease-in-out;
+    position: relative;
+}
+#menu-responsive >li > a{
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #a19f9f;
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(58, 58, 58);
+}
+#menu-responsive >li:hover > a{
+    color: #ffffff;
+} 
+#menu-responsive #sub-menu-icon{
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    display:none;
+    transition: all .25s ease-in-out;
+}
+#menu-responsive >li:hover #sub-menu-icon {
+    display: block;
+}
+#menu-responsive .sub-menu{
+    list-style: none;
+    background-color: #1c1c1d;
+    display: none;
+}
+#menu-responsive .sub-menu li {
+    transition: all .25s ease-in-out;
+}
+#menu-responsive .sub-menu a {
+    padding: 10px;
+}
+#menu-responsive .sub-menu li:hover a {
+    color: #ffffff;
+}
+.rotate-sub-menu-icon{
+    transform: rotate(-180deg);
+}
+#wp-content{
+    padding: 20px;
+}
+
+@media (min-width : 992px){
+    ul#main-menu{
+        display: flex;
+    }
+    #navbar-brand-links{
+        flex-grow: 0;
+    }
+    .navbar-icon-toggle{
+        display: none;
+    }
+    .navbar-login,.search-icon{
+        font-size: 12px;
+    }
+    .navbar-menu-chill-parent{
+        height: auto;
+    }
+}
