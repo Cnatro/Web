@@ -2,7 +2,7 @@ window.onload = function () {
   let list_product = document.querySelector("#wp-product-new .list-products");
   let list_product_sell_best = document.querySelector("#wp-product-feature .list-products");
   //load data từ json lên
-  fetch("../data.json")
+  fetch("../Project-Bootstrap5/data.json")
     .then((res) => res.json())
     .then(function (datas) {
         let data = "";
