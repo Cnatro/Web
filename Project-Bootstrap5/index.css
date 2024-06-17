@@ -41,7 +41,14 @@ ul.sub-menu{
 #wp-product-new .list-products .product-item:hover .product-thumail img{
     transform: scale(110%);
 }
-
+#goToTop{
+    top:85% !important;
+    right: 4% !important;
+    z-index: 1010;
+}
+.show{
+    display: block !important;
+}
 /* responsive */
 @media(min-width : 768px){
     #wp-commit-product .commit-item{

@@ -49,4 +49,17 @@ window.onload = function () {
         let firstChild = list_product_sell_best.children[0];
         document.querySelector("#wp-product-feature .list-products").append(firstChild);
     })  
+    // go to top
+    let goTopBtn = document.getElementById("goToTop");
+    window.onscroll = function(){
+        scrollToTop();
+    };
+
+    function scrollToTop(){
+        if(document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
+            goTopBtn.classList.add('show');
+        }
+        else
+        goTopBtn.classList.remove('show');
+    }
 };

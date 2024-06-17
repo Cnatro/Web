@@ -11,9 +11,12 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="header" class="bg-dark text-white">
-            <div id="top-header" class="pt-2 d-none d-md-block">
+    <div id="wrapper" class="position-relative">
+        <div id="goToTop" class="d-none position-fixed">
+            <a href="#wrapper" class="btn btn-outline-info rounded-circle"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+        <div id="header" class="bg-dark text-white fixed-top">
+            <div id="top-header" class="p-1 d-none d-md-block border-bottom">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
@@ -125,7 +128,7 @@
                             </a>
                         </div>
                         <div class="col-2 g-1 d-block d-md-none">
-                            <nav class="navbar navbar-expand-md px-1">
+                            <nav class="navbar navbar-expand-md">
                                 <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas"
                                     data-bs-target="#offcanvasMainMenu">
                                     <span class="navbar-toggler-icon"></span>
@@ -136,6 +139,7 @@
                 </div>
             </div>
         </div>
+        <div class="d-block d-md-none" style="height: 7vh !important;"></div>
         <!-- end header -->
         <div id="wp-content">
             <section id="wp-banner" style="background-color: #dadada !important;">
