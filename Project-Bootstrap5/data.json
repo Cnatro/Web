@@ -1,0 +1,46 @@
+[
+    {
+        "src_img" : "images/product-2.jpg",
+        "price" : "3.999.000đ"
+    },
+    {
+        "src_img" : "images/product-3.jpg",
+        "price" : "3.999.000đ"
+    },
+    {
+        "src_img" : "images/product-4.jpg",
+        "price" : "999.000đ"
+    },
+    {
+        "src_img" : "images/product-5.jpg",
+        "price" : "3.999.000đ"
+    },
+    {
+        "src_img" : "images/product-6.jpg",
+        "price" : "2.999.000đ"
+    },
+    {
+        "src_img" : "images/product-7.jpg",
+        "price" : "3.100.000đ"
+    },
+    {
+        "src_img" : "images/product-8.jpg",
+        "price" : "5.099.000đ"
+    },
+    {
+        "src_img" : "images/product-9.jpg",
+        "price" : "3.109.000đ"
+    },
+    {
+        "src_img" : "images/product-10.jpg",
+        "price" : "1.999.000đ"
+    },
+    {
+        "src_img" : "images/product-11.jpg",
+        "price" : "4.999.000đ"
+    },
+    {
+        "src_img" : "images/product-6.jpg",
+        "price" : "4.999.000đ"
+    }
+]

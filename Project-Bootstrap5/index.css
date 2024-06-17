@@ -1,0 +1,53 @@
+#wp-main-menu #offcanvasMainMenu  ul > li a,
+#wp-main-menu #offcanvasMainMenu ul > li a > #icon-item,
+#wp-main-menu #offcanvasMainMenu ul > li > ul.sub-menu,
+#wp-commit-product #commit-product > .commit-item
+{
+    transition: all 0.3s ease-in-out;
+}
+#wp-main-menu #offcanvasMainMenu ul > li:hover > a,
+.sub-menu li:hover > a,
+#icon-shop a:hover
+{
+    color: rgb(236, 72, 72) !important;
+}
+#wp-main-menu #offcanvasMainMenu ul > li:hover a > #icon-item{
+    transform: rotate(180deg);
+}
+#wp-main-menu #offcanvasMainMenu ul > li:hover > ul.sub-menu{
+    display: block !important;
+}
+/* sub-menu */
+ul.sub-menu{
+    background-color: white;
+    width: 300px;
+    z-index: 1;
+}
+/* commit-product */
+
+#wp-commit-product #commit-product > .commit-item:hover{
+    color: rgb(236, 72, 72) !important;
+}
+/* list-product */
+#wp-product-new .list-products .product-item .product-name,
+#wp-product-new .list-products .product-item .product-thumail img,
+#wp-product-new .list-products
+{
+    transition: all 0.2s ease-in-out;
+}
+#wp-product-new .list-products .product-item:hover .product-name{
+    color: rgb(236, 72, 72) !important;
+}
+#wp-product-new .list-products .product-item:hover .product-thumail img{
+    transform: scale(110%);
+}
+
+/* responsive */
+@media(min-width : 768px){
+    #wp-commit-product .commit-item{
+        width: 30% !important;
+    }
+    /* #wp-commit-product > div{
+        height: 200px !important;
+    } */
+}

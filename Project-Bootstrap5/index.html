@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Bootstrap demo</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header" class="bg-dark text-white">
+            <div id="top-header" class="pt-2 d-none d-md-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Thứ 2 - thứ 7: 8:00am - 20:00am</span>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <a href="#" class="text-decoration-none text-white">
+                                <i class="fa-regular fa-envelope"></i>
+                                <span>support@unitop.vn</span>
+                            </a>
+                        </div>
+                        <div class="col-md-4 text-end">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0358001963</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end top-header -->
+            <div id="wp-main-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-md-2 align-content-center">
+                            <a href="#"><img class="img-fluid" src="images/logo.png" alt=""></a>
+                        </div>
+                        <div class="col-1 px-0 px-md-2 col-md-8">
+                            <nav class="navbar navbar-expand-md justify-content-end p-0">
+                                <!-- menu offcanvas -->
+                                <div id="offcanvasMainMenu" class="offcanvas offcanvas-start bg-dark">
+                                    <div class="offcanvas-header">
+                                        <a href="#"><img class="img-fluid" src="images/logo.png" alt=""></a>
+                                        <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <!-- end offcanvas header -->
+                                    <div class="offcanvas-body py-0">
+                                        <ul class="navbar-nav"
+                                            style="justify-content: space-between !important;width: 100%;font-size: 14px !important;">
+                                            <li class="nav-item">
+                                                <a class="px-md-1 py-md-4 nav-link text-white" href="">TRANG CHỦ</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="px-md-1 py-md-4 nav-link text-white" href="">GIỚI THIỆU</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="px-md-1 py-md-4 nav-link text-white" href="">GIÀY</a>
+                                            </li>
+                                            <li class="nav-item position-relative">
+                                                <a class="px-md-1 py-md-4 nav-link text-white" href="">
+                                                    <span>TÚI XÁCH</span>
+                                                    <i id="icon-item" class="p-1 fa-solid fa-chevron-down"></i>
+                                                </a>
+                                                <ul
+                                                    class="sub-menu list-unstyled shadow p-4 position-absolute top-100 start-0 d-none">
+                                                    <li>
+                                                        <a class="d-block p-1 text-decoration-none text-dark"
+                                                            href="">Túi
+                                                            xách tay nữ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="d-block p-1 text-decoration-none text-dark"
+                                                            href="">Túi
+                                                            đeo chéo nữ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="d-block p-1 text-decoration-none text-dark"
+                                                            href="">Túi
+                                                            bản nữ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="d-block p-1 text-decoration-none text-dark"
+                                                            href="">Túi
+                                                            đeo vai</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="px-md-1 py-md-4 nav-link text-white" href="">ÁO THUN</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="px-md-1 py-md-4 nav-link text-white" href="">ĐỒNG HỒ</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="px-md-1 py-md-4 nav-link text-white" href="">BLOG</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="px-md-1 py-md-4 nav-link text-white" href="">LIÊN HỆ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- end offcanvas body -->
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="col-3 col-md-2 text-end align-content-center" id="icon-shop">
+                            <a class="text-decoration-none text-white" href=""><i
+                                    class="fa-solid fa-magnifying-glass px-2"></i></a>
+                            <a class="d-inline-block text-white" href="#">
+                                <div class="position-relative">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                        style="width: 20px; height: 20px;">
+                                        7
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-2 g-1 d-block d-md-none">
+                            <nav class="navbar navbar-expand-md px-1">
+                                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasMainMenu">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header -->
+        <div id="wp-content">
+            <section id="wp-banner" style="background-color: #dadada !important;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="2000">
+                                        <img src="images/banner.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="images/banner.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="images/banner.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end banner -->
+            <section id="wp-commit-product" class="border-bottom">
+                <div class="container align-content-center my-2 my-md-3">
+                    <div id="commit-product" class="row justify-content-around py-3 py-md-5">
+                        <div class="commit-item col-10 col-md-3 text-center align-content-center text-dark-emphasis mb-3 mb-md-0 py-4 px-2"
+                            style="background-color: #ece5e5;">
+                            <i class="fs-2 d-md-block fa-solid fa-shield-halved"></i>
+                            <span>Đổi trả trong 30 ngày</span>
+                        </div>
+                        <div class="commit-item col-10 col-md-3 text-center align-content-center text-dark-emphasis mb-3 mb-md-0 py-4 px-2"
+                            style="background-color: #ece5e5;">
+                            <i class="fs-2 d-md-block fa-solid fa-headphones"></i>
+                            <span>Hỗ trợ 24/7 0358001963</span>
+                        </div>
+                        <div class="commit-item col-10 col-md-3 text-center align-content-center text-dark-emphasis mb-3 mb-md-0 py-4 px-2"
+                            style="background-color: #ece5e5;">
+                            <i class="fs-2 d-md-block fa-solid fa-truck"></i>
+                            <span>Miễn phí ship toàn quốc</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end commit-product -->
+            <section id="wp-product-new">
+                <div class="container">
+                    <div class="row my-3 my-md-5">
+                        <div class="col-md-12">
+                            <div class="infor-list-product p-4 text-center">
+                                <h1>SẢN PHẨM MỚI</h1>
+                                <h5 class="text-dark-emphasis fw-normal">Những sản phẩm là xu thế của thời trang 2024
+                                    được ưa chuộng</h5>
+                            </div>
+                            <!-- end infor -->
+                            <div class="list-products row row-cols-1 row-cols-md-4 g-4">
+                                <div class="col card product-item border-0">
+                                    <div class="product-thumail overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="images/product-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="product-infor py-2">
+                                        <div class="product-assess text-warning d-inline-block py-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                        <span class="p-1 text-dark-emphasis">(8 nhận xét)</span>
+                                        <div class="product-box">
+                                            <h6><a class="product-name text-decoration-none text-dark" href="">Túi xách
+                                                    hiệu JAKA Nhật bản</a></h6>
+                                            <span class="price">1.200.000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end item -->
+                            </div>
+                            <!-- end-product-item -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end product-new -->
+            <section id="wp-catogery">
+                <div class="container">
+                    <div class="row mb-3 mb-md-5 g-0">
+                        <div class="col-md-6">
+                            <div class="card border-0">
+                                <a href=""><img class="img-fluid" src="images/category-1.jpg" alt=""></a>
+                                <div class="card-img-overlay text-end align-content-end m-3">
+                                    <h1 class="fs-1">GIÀY</h1>
+                                    <button class="btn rounded-0 text-white px-4"
+                                        style="background-color: black !important;">Xem thêm</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row-1 h-50">
+                                <a href=""><img class="img-fluid" src="images/category-2.jpg" alt=""></a>
+                            </div>
+                            <div class="row-2 h-50">
+                                <a href=""><img class="img-fluid" src="images/category-3.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end catogery -->
+            <section id="wp-product-feature" class="border-bottom">
+                <div class="container">
+                    <div class="row my-3 my-md-5">
+                        <div class="col-md-12">
+                            <div class="infor-list-product p-4 text-center">
+                                <h1>BETTER SELLER</h1>
+                                <h5 class="text-dark-emphasis fw-normal">Bộ sưu tập những sản phẩm bán chạy nhất hệ
+                                    thống, bây giờ của bạn</h5>
+                            </div>
+                            <!-- end infor -->
+                            <div class="list-products row row-cols-1 row-cols-md-4 g-4 flex-nowrap overflow-hidden">
+                                <div class="col card product-item border-0">
+                                    <div class="product-thumail overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="images/product-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="product-infor py-2">
+                                        <div class="product-assess text-warning d-inline-block py-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                        <span class="p-1 text-dark-emphasis">(8 nhận xét)</span>
+                                        <div class="product-box">
+                                            <h6><a class="product-name text-decoration-none text-dark" href="">Túi xách
+                                                    hiệu JAKA Nhật bản</a></h6>
+                                            <span class="price">1.200.000đ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end item -->
+                            </div>
+                            <!-- end-product-item -->
+                            <div id="icon-move-product" class="text-center mt-4">
+                                <button id="btn-previous" class="btn btn-outline-danger"><i
+                                        class="fa-solid fa-angle-left"></i></button>
+                                <button id="btn-next" class="btn btn-outline-danger"><i
+                                        class="fa-solid fa-angle-right"></i></button>
+                            </div>
+                            <!-- end button next - previous -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end product-feature -->
+            <section id="wp-lastest-blog">
+                <div class="container">
+                    <div class="row my-3 my-md-5">
+                        <div class="col-md-12">
+                            <div class="infor-list-product p-4 text-center mb-3">
+                                <h1 class="fw-bold">BLOG</h1>
+                                <h5 class="text-dark fw-normal">Những bài viết mới về trang bạn có thể xem bây
+                                    giờ!</h5>
+                            </div>
+                            <!-- end infor -->
+                            <div class="list-products row row-cols-1 row-cols-md-3 g-3 flex-md-nowrap overflow-hidden">
+                                <div class="col card product-item border-0">
+                                    <div class="product-thumail overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="images/post-1.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="product-infor py-2 text-center border">
+                                        <small class="p-1 d-block">Thời trang</small>
+                                        <h6 class="m-0"><a
+                                                class="product-name text-decoration-none text-dark p-2 d-block fw-bold"
+                                                href="">5 BASIC TIPS FOR COLORS</a></h6>
+                                        <span class="day text-dark-emphasis">June 10,2020</span>
+                                        <span class="pb-4 pt-1 d-block">Tips and Tricks that most people woundln't
+                                            hightlight when colors</span>
+                                    </div>
+                                </div>
+                                <!-- end item -->
+                                <div class="col card product-item border-0">
+                                    <div class="product-thumail overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="images/post-2.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="product-infor py-2 text-center border">
+                                        <small class="p-1 d-block">Thời trang</small>
+                                        <h6 class="m-0"><a
+                                                class="product-name text-decoration-none text-dark p-2 d-block fw-bold"
+                                                href="">5 BASIC TIPS FOR COLORS</a></h6>
+                                        <span class="day text-dark-emphasis">June 10,2020</span>
+                                        <span class="pb-4 pt-1 d-block">Tips and Tricks that most people woundln't
+                                            hightlight when colors</span>
+                                    </div>
+                                </div>
+                                <!-- end item -->
+                                <div class="col card product-item border-0">
+                                    <div class="product-thumail overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="images/post-3.jpg" alt="" /></a>
+                                    </div>
+                                    <div class="product-infor py-2 text-center border">
+                                        <small class="p-1 d-block">Thời trang</small>
+                                        <h6 class="m-0"><a
+                                                class="product-name text-decoration-none text-dark p-2 d-block fw-bold"
+                                                href="">5 BASIC TIPS FOR COLORS</a></h6>
+                                        <span class="day text-dark-emphasis">June 10,2020</span>
+                                        <span class="pb-4 pt-1 d-block">Tips and Tricks that most people woundln't
+                                            hightlight when colors</span>
+                                    </div>
+                                </div>
+                                <!-- end item -->
+                            </div>
+                            <!-- end-product-item -->
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-12">
+                            <div class="see-more h-25 text-center align-content-center">
+                                <button class="btn btn-outline-dark px-3">Xem thêm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end lastest-blog -->
+        </div>
+        <!-- end wp-content -->
+        <div id="footer" class="bg-dark text-white">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-3">
+                        <h5 class="text-danger px-1">Địa chỉ</h5>
+                        <ul class="list-unstyled p-1">
+                            <li class="pb-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Tòa nhà N01T5 Ngoại giao Đoàn, Bắc Từ Liêm, Hà Nội</span>
+                            </li>
+                            <li class="pb-1">
+                                <i class="fa-solid fa-phone"></i>
+                                <span id="number-phone">0358001963</span>
+                            </li>
+                            <li class="pb-1">
+                                <i class="fa-regular fa-envelope"></i>
+                                <span id="mail">support@unitop.vn</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="text-danger px-1">GIỚI THIỆU</h5>
+                        <ul class="list-unstyled p-1">
+                            <li class="pb-1">
+                                <span>Về chúng tôi</span>
+                            </li>
+                            <li class="pb-1">
+                                <span>Cách đặt hàng</span>
+                            </li>
+                            <li class="pb-1">
+                                <span>Kiểm tra đơn hàng</span>
+                            </li>
+                            <li class="pb-1">
+                                <span>Hỗ trợ</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="text-danger px-1">DANH MỤC</h5>
+                        <ul class="list-unstyled p-1">
+                            <li class="pb-1">
+                                <span>Giày thể thao</span>
+                            </li>
+                            <li class="pb-1">
+                                <span>Váy</span>
+                            </li>
+                            <li class="pb-1">
+                                <span>Kính</span>
+                            </li>
+                            <li class="pb-1">
+                                <span>Túi xách</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="text-danger px-1">SOCIAL</h5>
+                        <ul class="list-unstyled p-1">
+                            <li class="pb-1">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>Facebook</span>
+                            </li>
+                            <li class="pb-1">
+                                <i class="fa-brands fa-youtube"></i>
+                                <span>Youtube</span>
+                            </li>
+                            <li class="pb-1">
+                                <i class="fa-brands fa-twitter"></i>
+                                <span>Twitter</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end footer -->
+        <div id="footer-bottom" class="bg-danger text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center py-1 py-md-2">
+                        <span>&copy; 2019 UNITOP ACADEMY - UNITOP.VN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js.map"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
