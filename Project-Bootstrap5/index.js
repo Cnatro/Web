@@ -20,7 +20,7 @@ window.onload = function () {
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star-half-stroke"></i>
                                         </div>
-                                        <span class="p-1 text-dark-emphasis">(8 nhận xét)</span>
+                                        <span class="p-0 p-md-1 text-dark-emphasis d-block d-md-inline">(8 nhận xét)</span>
                                         <div class="product-box">
                                             <h6><a class="product-name text-decoration-none text-dark" href="">Túi xách
                                                     hiệu JAKA Nhật bản</a></h6>
